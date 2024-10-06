@@ -1,0 +1,4767 @@
+diff --git a/bin/cat/cat b/bin/cat/cat
+new file mode 100755
+index 0000000..41169f5
+Binary files /dev/null and b/bin/cat/cat differ
+diff --git a/bin/cat/cat.o b/bin/cat/cat.o
+new file mode 100644
+index 0000000..d219d4f
+Binary files /dev/null and b/bin/cat/cat.o differ
+diff --git a/bin/cat/depend.mk b/bin/cat/depend.mk
+index 94637dd..6f88e64 100644
+--- a/bin/cat/depend.mk
++++ b/bin/cat/depend.mk
+@@ -10,3 +10,4 @@ cat.o: \
+  $(OSTREE)/include/string.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/cp/cp b/bin/cp/cp
+new file mode 100755
+index 0000000..b71b3c3
+Binary files /dev/null and b/bin/cp/cp differ
+diff --git a/bin/cp/cp.o b/bin/cp/cp.o
+new file mode 100644
+index 0000000..fe6a1e0
+Binary files /dev/null and b/bin/cp/cp.o differ
+diff --git a/bin/cp/depend.mk b/bin/cp/depend.mk
+index 10e8c59..de47503 100644
+--- a/bin/cp/depend.mk
++++ b/bin/cp/depend.mk
+@@ -9,3 +9,4 @@ cp.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/false/depend.mk b/bin/false/depend.mk
+index f0fbc95..fb0be2d 100644
+--- a/bin/false/depend.mk
++++ b/bin/false/depend.mk
+@@ -8,3 +8,4 @@ false.o: \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/stdlib.h
++
+diff --git a/bin/false/false b/bin/false/false
+new file mode 100755
+index 0000000..c34fa6c
+Binary files /dev/null and b/bin/false/false differ
+diff --git a/bin/false/false.o b/bin/false/false.o
+new file mode 100644
+index 0000000..36c8148
+Binary files /dev/null and b/bin/false/false.o differ
+diff --git a/bin/ln/depend.mk b/bin/ln/depend.mk
+index ac1d5eb..490b5b1 100644
+--- a/bin/ln/depend.mk
++++ b/bin/ln/depend.mk
+@@ -11,3 +11,4 @@ ln.o: \
+  $(OSTREE)/include/string.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/ln/ln b/bin/ln/ln
+new file mode 100755
+index 0000000..e6798d5
+Binary files /dev/null and b/bin/ln/ln differ
+diff --git a/bin/ln/ln.o b/bin/ln/ln.o
+new file mode 100644
+index 0000000..7a34c82
+Binary files /dev/null and b/bin/ln/ln.o differ
+diff --git a/bin/ls/depend.mk b/bin/ls/depend.mk
+index f92b234..1d5e8a4 100644
+--- a/bin/ls/depend.mk
++++ b/bin/ls/depend.mk
+@@ -15,3 +15,4 @@ ls.o: \
+  $(OSTREE)/include/errno.h \
+  $(OSTREE)/include/kern/errno.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/bin/ls/ls b/bin/ls/ls
+new file mode 100755
+index 0000000..b702e52
+Binary files /dev/null and b/bin/ls/ls differ
+diff --git a/bin/ls/ls.o b/bin/ls/ls.o
+new file mode 100644
+index 0000000..4493b9b
+Binary files /dev/null and b/bin/ls/ls.o differ
+diff --git a/bin/mkdir/depend.mk b/bin/mkdir/depend.mk
+index 42144ef..597b0a3 100644
+--- a/bin/mkdir/depend.mk
++++ b/bin/mkdir/depend.mk
+@@ -11,3 +11,4 @@ mkdir.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/mkdir/mkdir b/bin/mkdir/mkdir
+new file mode 100755
+index 0000000..a8ad760
+Binary files /dev/null and b/bin/mkdir/mkdir differ
+diff --git a/bin/mkdir/mkdir.o b/bin/mkdir/mkdir.o
+new file mode 100644
+index 0000000..74d62fc
+Binary files /dev/null and b/bin/mkdir/mkdir.o differ
+diff --git a/bin/mv/depend.mk b/bin/mv/depend.mk
+index c4d1bc8..54d486a 100644
+--- a/bin/mv/depend.mk
++++ b/bin/mv/depend.mk
+@@ -9,3 +9,4 @@ mv.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/mv/mv b/bin/mv/mv
+new file mode 100755
+index 0000000..94d939e
+Binary files /dev/null and b/bin/mv/mv differ
+diff --git a/bin/mv/mv.o b/bin/mv/mv.o
+new file mode 100644
+index 0000000..8b1aa48
+Binary files /dev/null and b/bin/mv/mv.o differ
+diff --git a/bin/pwd/depend.mk b/bin/pwd/depend.mk
+index 41dba83..50cae5f 100644
+--- a/bin/pwd/depend.mk
++++ b/bin/pwd/depend.mk
+@@ -13,3 +13,4 @@ pwd.o: \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/limits.h \
+  $(OSTREE)/include/kern/limits.h
++
+diff --git a/bin/pwd/pwd b/bin/pwd/pwd
+new file mode 100755
+index 0000000..683d7bf
+Binary files /dev/null and b/bin/pwd/pwd differ
+diff --git a/bin/pwd/pwd.o b/bin/pwd/pwd.o
+new file mode 100644
+index 0000000..93ee886
+Binary files /dev/null and b/bin/pwd/pwd.o differ
+diff --git a/bin/rm/depend.mk b/bin/rm/depend.mk
+index 62d6177..5dde52e 100644
+--- a/bin/rm/depend.mk
++++ b/bin/rm/depend.mk
+@@ -9,3 +9,4 @@ rm.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/rm/rm b/bin/rm/rm
+new file mode 100755
+index 0000000..a67722d
+Binary files /dev/null and b/bin/rm/rm differ
+diff --git a/bin/rm/rm.o b/bin/rm/rm.o
+new file mode 100644
+index 0000000..333f023
+Binary files /dev/null and b/bin/rm/rm.o differ
+diff --git a/bin/rmdir/depend.mk b/bin/rmdir/depend.mk
+index f361720..d752ff4 100644
+--- a/bin/rmdir/depend.mk
++++ b/bin/rmdir/depend.mk
+@@ -9,3 +9,4 @@ rmdir.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/bin/rmdir/rmdir b/bin/rmdir/rmdir
+new file mode 100755
+index 0000000..28d0636
+Binary files /dev/null and b/bin/rmdir/rmdir differ
+diff --git a/bin/rmdir/rmdir.o b/bin/rmdir/rmdir.o
+new file mode 100644
+index 0000000..5832e3a
+Binary files /dev/null and b/bin/rmdir/rmdir.o differ
+diff --git a/bin/sh/depend.mk b/bin/sh/depend.mk
+index db813ac..58deaf8 100644
+--- a/bin/sh/depend.mk
++++ b/bin/sh/depend.mk
+@@ -1,3 +1,4 @@
+ 
+ sh.o: \
+  sh.c
++
+diff --git a/bin/sh/dependh.mk b/bin/sh/dependh.mk
+index 325543a..53c8282 100644
+--- a/bin/sh/dependh.mk
++++ b/bin/sh/dependh.mk
+@@ -2,3 +2,4 @@
+ sh.ho: \
+  sh.c \
+  $(OSTREE)/hostinclude/hostcompat.h
++
+diff --git a/bin/sh/host-sh b/bin/sh/host-sh
+new file mode 100755
+index 0000000..e721671
+Binary files /dev/null and b/bin/sh/host-sh differ
+diff --git a/bin/sh/sh b/bin/sh/sh
+new file mode 100755
+index 0000000..c5adad7
+Binary files /dev/null and b/bin/sh/sh differ
+diff --git a/bin/sh/sh.ho b/bin/sh/sh.ho
+new file mode 100644
+index 0000000..b94e3c6
+Binary files /dev/null and b/bin/sh/sh.ho differ
+diff --git a/bin/sh/sh.o b/bin/sh/sh.o
+new file mode 100644
+index 0000000..5905813
+Binary files /dev/null and b/bin/sh/sh.o differ
+diff --git a/bin/sync/depend.mk b/bin/sync/depend.mk
+index 4f79baa..1db5338 100644
+--- a/bin/sync/depend.mk
++++ b/bin/sync/depend.mk
+@@ -7,3 +7,4 @@ sync.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h
++
+diff --git a/bin/sync/sync b/bin/sync/sync
+new file mode 100755
+index 0000000..4cf50ab
+Binary files /dev/null and b/bin/sync/sync differ
+diff --git a/bin/sync/sync.o b/bin/sync/sync.o
+new file mode 100644
+index 0000000..c6d2bbe
+Binary files /dev/null and b/bin/sync/sync.o differ
+diff --git a/bin/true/depend.mk b/bin/true/depend.mk
+index 1fd4de7..9ced686 100644
+--- a/bin/true/depend.mk
++++ b/bin/true/depend.mk
+@@ -8,3 +8,4 @@ true.o: \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/stdlib.h
++
+diff --git a/bin/true/true b/bin/true/true
+new file mode 100755
+index 0000000..7d6f052
+Binary files /dev/null and b/bin/true/true differ
+diff --git a/bin/true/true.o b/bin/true/true.o
+new file mode 100644
+index 0000000..645e968
+Binary files /dev/null and b/bin/true/true.o differ
+diff --git a/defs.mk b/defs.mk
+new file mode 100644
+index 0000000..5b736af
+--- /dev/null
++++ b/defs.mk
+@@ -0,0 +1,175 @@
++# This file was generated by configure. Edits will disappear if you rerun
++# configure. If you find that you need to edit this file to make things
++# work, let the course staff know and we'll try to fix the configure script.
++#
++# 
++# The purpose of this file is to hold all the makefile definitions
++# needed to adjust the OS/161 build process to any particular
++# environment. If I've done it right, all you need to do is rerun the
++# configure script and make clean if you decide to work from Linux or
++# BSD instead of Digital Unix. If I've done it mostly right, you may
++# need to edit this file but you still hopefully won't need to edit
++# any of the makefiles.
++#
++
++
++#
++# Initialize various variables that we set only with += in case some make
++# has a default value we weren't expecting.
++#
++CFLAGS=
++KCFLAGS=
++HOST_CFLAGS=
++LDFLAGS=
++KLDFLAGS=
++HOST_LDFLAGS=
++LIBS=
++HOST_LIBS=
++
++#
++# Location of installed runnable system tree.
++#
++# This must be an absolute path, because it is used from different
++# levels of the source tree.
++#
++OSTREE=$(HOME)/cs161/root
++
++#
++# Name of the platform we're building OS/161 to run on.
++#
++PLATFORM=mips
++
++#
++# As of cs161-toolchain-1.2 the MIPS toolchain is a mips-linux one
++# that generates more or less SVR4 ELF ABI compliant code. This means
++# that by default all code is PIC (position-independent code), which
++# is all very well but not what we want. So we use -fno-pic to turn
++# this behavior off. It turns out you need -mno-abicalls too to turn
++# it off completely.
++#
++CFLAGS+=-mno-abicalls -fno-pic
++KCFLAGS+=-mno-abicalls -fno-pic
++
++# If using an older cs161-toolchain for MIPS, you'll need this instead:
++#LDFLAGS+=-Ttext 0x1000
++#
++# Because OS/161 runs on one architecture (probably MIPS or ANT32) and
++# is compiled on another (probably Alpha or i386) it is important to
++# make sure the right compiler (and assembler, linker, etc.) is used
++# at every point.
++#
++# A compiler compiles *running on* one platform, and *generates code*
++# that may run on a different platform. Thus, supposing that you are 
++# building MIPS OS/161 on i386 Linux, there are four possible compilers.
++# (If you are building some other OS/161 or building on some other
++# platform, make the appropriate substitutions.) These four are:
++#
++#    (1) runs on i386 Linux, generates code for i386 Linux
++#    (2) runs on i386 Linux, generates code for MIPS OS/161
++#    (3) runs on MIPS OS/161, generates code for i386 Linux
++#    (4) runs on MIPS OS/161, generates code for MIPS OS/161
++#
++# Note that when building on i386 Linux, there is no use for a
++# compiler that runs on MIPS OS/161; you can't run it. Thus cases
++# (3) and (4) do not interest us.
++#
++# However, in the course of the build, there are places where it is
++# necessary to compile and run programs on the machine the build is
++# happening on. Thus, the makefiles need to be able to access *both*
++# compiler (1) and compiler (2).
++#
++# We do this by defining the make variable CC to be the common case,
++# compiler (2), and the make variable HOST_CC to be compiler (1). 
++# Similar variables are defined for the other bits of the toolchain,
++# like AS (assembler), LD (linker), and SIZE (size program).
++#
++# Then, programs to be run during the build can be compiled with 
++# HOST_CC, and components of the system can be built with CC.
++#
++
++
++# CC: compiler, when compiling to object files
++CC=cs161-gcc 
++# LDCC: compiler, when linking
++LDCC=cs161-gcc
++# AS: assembler.
++AS=cs161-as
++# LD: linker
++LD=cs161-ld
++# AR: archiver (librarian)
++AR=cs161-ar
++# RANLIB: library postprocessor
++RANLIB=cs161-ranlib
++# NM: prints symbol tables
++NM=cs161-nm
++# SIZE: prints size of binaries
++SIZE=cs161-size
++# STRIP: strips debug info
++STRIP=cs161-strip
++
++
++# compiler for host system
++HOST_CC=gcc
++
++# compiler for host system, when linking
++HOST_LDCC=gcc
++
++# assembler for host system
++HOST_AS=as
++
++# linker for host system
++HOST_LD=ld
++
++# archiver (librarian) for host system
++HOST_AR=ar
++
++# ranlib (library postprocessor) for host system... or "true" to skip it
++HOST_RANLIB=ranlib
++
++# nm for host system
++HOST_NM=nm
++
++# size for host system
++HOST_SIZE=size
++
++# strip for host system
++HOST_STRIP=strip
++
++
++# The HOST_... versions are for compiling/linking for the host system.
++# The K... versions are for the kernel build. 
++
++# Compile flags. 
++# The kernel has its own debug/optimize setting in the kernel config, so
++# we don't include ours.
++CFLAGS+=-Wall -W -Wwrite-strings -O2
++KCFLAGS+=-Wall -W -Wwrite-strings
++HOST_CFLAGS+=-Wall -W -Wwrite-strings -O2 -I$(OSTREE)/hostinclude
++
++# Linker flags
++LDFLAGS+=
++KLDFLAGS+=
++HOST_LDFLAGS+=
++
++# Libraries
++# 
++LIBS+=
++HOST_LIBS+=
++
++
++# These are cflags used to conditionally compile src/lib/hostcompat.
++COMPAT_CFLAGS=
++
++# These are make targets that we conditionally enable when installing
++# in src/lib/hostcompat.
++COMPAT_TARGETS=
++
++
++# When we compile OS/161 programs, we want to use the OS/161 header files
++# and libraries. By default, gcc will look in some include directory and
++# some lib directory that it was told to use when it was compiled. We 
++# assume that directory isn't ours. (If it is, all these variables can
++# be set to empty, but everything will still work if you don't.)
++TREE_CFLAGS=-nostdinc -I$(OSTREE)/include
++TREE_LDFLAGS=-nostdlib -L$(OSTREE)/lib $(OSTREE)/lib/crt0.o
++TREE_LIBS=-lc
+diff --git a/kern/compile/ASST1/Makefile b/kern/compile/ASST1/Makefile
+new file mode 100644
+index 0000000..3e24232
+--- /dev/null
++++ b/kern/compile/ASST1/Makefile
+@@ -0,0 +1,196 @@
++# Automatically generated by config.
++# Edit arch/mips/conf/Makefile.mips instead, and rerun config.
++#
++
++#
++# Makefile.mips
++#
++# OS/161 kernel makefile base for the MIPS r2000/r3000.
++#
++# The actual makefiles used are copies of this file - if you want to edit,
++# edit kern/arch/mips/conf/Makefile.mips and rerun config.
++#
++
++
++#
++# Filename for the kernel.
++#
++KERNEL=kernel
++
++#
++# Get the defs that were dumped out from the kernel config tool.
++# This defines:
++#	S		Path for top of kernel source tree
++#	ARCH		Architecture ("mips")
++#	DEBUGFLAGS	-O2 or -g
++#	CONFNAME	The name of the kernel config, e.g., ASST1
++#
++include defs.mk
++
++#
++# Get the tree-wide defs.
++# This defines (that we use):
++#	OSTREE		Path for top of installed system tree
++#	CC		C compiler
++#	KCFLAGS		C compiler flags for kernel
++#	LD		Linker
++#	KLDFLAGS	Linker flags for kernel
++#	SIZE		Object file size tool
++#
++include $S/../defs.mk
++
++#
++# Adjust defs for building the kernel.
++#
++# The LOAD_ADDRESS is the virtual address where the kernel will be loaded
++# into memory. This is in the direct-mapped cached segment of the MIPS
++# address space. -Ttext is the linker option for setting it.
++#
++# -T provides the linker with a "linker script". This is a piece of
++# obscure mumble that tells the linker how to put together the output
++# program. The only reason we need it is that the linker breaks if you
++# try to use -Ttext and its default built-in linker script at the same
++# time.
++#
++# -nostdinc prevents including header files other than our own, and 
++# -nostdlib prevents linking against any standard libraries. Because
++# the kernel has to be a completely standalone program, this is important.
++#
++# -ffreestanding tells gcc this is not an ordinary program, so it will
++# make fewer unwise assumptions about standard library functions.
++#
++# We define _KERNEL so certain source files that are shared between the
++# kernel and userland (like strcpy.c) can tell the difference so they know
++# which header files to use.
++#
++# -G 0 tells the assembler and linker not to reference global variables
++# via the "global pointer" (MIPS gp register) because we don't support 
++# handling the gp register.
++#
++LOAD_ADDRESS=0x80001000
++INCLUDES=-nostdinc -I$S/include -I$S/dev -I. 
++CFLAGS=$(KCFLAGS) $(DEBUGFLAGS) $(INCLUDES) -ffreestanding -D_KERNEL -G 0
++LDFLAGS=$(KLDFLAGS) -nostdlib \
++	-Ttext $(LOAD_ADDRESS) -T $S/arch/mips/conf/ldscript \
++	-G 0
++
++#
++# Rules for compiling various kinds of source files, by suffix.
++# (There's nothing magical about these names and make.)
++#
++# We don't actually use C++ in OS/161, although, with some fiddling,
++# you might be able to. But you must turn off exceptions and RTTI in
++# order to do so (the implementations of these in gcc are completely 
++# unsuitable for kernels.)
++#
++COMPILE.cc=$(CC) $(CFLAGS) -fno-rtti -fno-exceptions -c
++COMPILE.c=$(CC) $(CFLAGS) -c
++COMPILE.l=false   # redefine when needed 
++COMPILE.y=false   # redefine when needed 
++COMPILE.S=$(CC) $(CFLAGS) -c
++
++#
++# This should expand to all the header files in the kernel so they can
++# be fed to tags.
++#
++TAGS_HEADERS=$S/include/*.h $S/include/kern/*.h $S/arch/$(ARCH)/include/*.h
++
++#
++# Default make rule: build the kernel.
++#
++all: $(KERNEL)
++
++#
++# Here's how we link the kernel. 
++#
++# vers.c/.o is generated on every build. It contains a numeric serial
++# number incremented every time newvers.sh is run.  These values are
++# printed out by newvers.sh and are also displayed at boot time. This
++# makes it possible to tell at a glance whether you're actually
++# running the same kernel you just compiled.
++#
++# The version number is kept in the file called "version" in the build
++# directory.
++#
++# By immemorial tradition, "size" is run on the kernel after it's linked.
++#
++$(KERNEL):
++	$S/conf/newvers.sh $(CONFNAME)
++	$(COMPILE.c) vers.c
++	$(LD) $(LDFLAGS) $(OBJS) vers.o -o $(KERNEL)
++	$(SIZE) $(KERNEL)
++
++#
++# Use the -M argument to gcc to get it to output dependency information.
++# Note that we use -M, which includes deps for #include <...> files,
++# rather than -MM, which doesn't. This is because we are the operating
++# system: the #include <...> files are part of our project - in fact, in
++# the kernel they're the kernel's own include files - and they will be
++# changing!
++#
++depend:
++	$(CC) $(CFLAGS) -M $(SRCS) > depend.mk
++
++#
++# Remove everything generated during the compile.
++# (To remove absolutely everything automatically generated, you can just
++# blow away the whole compile directory.)
++#
++clean:
++	rm -f *.o *.a tags $(KERNEL)
++
++#
++# Rerun config for this configuration.
++#
++reconfig:
++	(cd ../../conf && ./config $(CONFNAME))
++
++#
++# [ -d $(OSTREE) ] succeeds if $(OSTREE) is a directory.
++# (See test(1).) Thus, if $(OSTREE) doesn't exist, it will be created.
++#
++
++# The kernel gets installed at the top of the installed system tree.
++# Since with OS/161 it's relatively likely that you'll be working with
++# several configurations at once, it gets installed under the name of
++# this config, and a symbolic link with the "real" name is set up to
++# point to the last kernel installed.
++#
++install:
++	[ -d $(OSTREE) ] || mkdir $(OSTREE)
++	cp $(KERNEL) $(OSTREE)/$(KERNEL)-$(CONFNAME)
++	-rm -f $(OSTREE)/$(KERNEL)
++	ln -s $(KERNEL)-$(CONFNAME) $(OSTREE)/$(KERNEL)
++
++#
++# Run tags on all the sources and header files. This is probably not
++# the most useful way to do this and needs attention. (XXX)
++#
++tags:
++	ctags -wtd $(SRCS) $(TAGS_HEADERS)
++
++#
++# This tells make that these rules are not files so it (hopefully)
++# won't become confused if files by those names appear.
++#
++.PHONY: all depend clean install tags reconfig
++
++#
++# Get the list of source files from where it was generated by the 
++# kernel config tool.
++#
++# This sets SRCS and OBJS, and also defines a rule for compiling each
++# source file.
++#
++include files.mk
++
++# Get dependency information.
++include depend.mk
++
++#
++# Tell make that the kernel depends on the object files listed in $(OBJS).
++# This (unlike the link commands that also use $(OBJS) above) must come
++# after the include of files.mk, because of the way make reads its input
++# and evaluates variables.
++#
++$(KERNEL): $(OBJS)
+diff --git a/kern/compile/ASST1/__printf.o b/kern/compile/ASST1/__printf.o
+new file mode 100644
+index 0000000..2ee2add
+Binary files /dev/null and b/kern/compile/ASST1/__printf.o differ
+diff --git a/kern/compile/ASST1/array.o b/kern/compile/ASST1/array.o
+new file mode 100644
+index 0000000..765edf8
+Binary files /dev/null and b/kern/compile/ASST1/array.o differ
+diff --git a/kern/compile/ASST1/arraytest.o b/kern/compile/ASST1/arraytest.o
+new file mode 100644
+index 0000000..707645c
+Binary files /dev/null and b/kern/compile/ASST1/arraytest.o differ
+diff --git a/kern/compile/ASST1/atoi.o b/kern/compile/ASST1/atoi.o
+new file mode 100644
+index 0000000..34a7b8e
+Binary files /dev/null and b/kern/compile/ASST1/atoi.o differ
+diff --git a/kern/compile/ASST1/autoconf.c b/kern/compile/ASST1/autoconf.c
+new file mode 100644
+index 0000000..c9cdf87
+--- /dev/null
++++ b/kern/compile/ASST1/autoconf.c
+@@ -0,0 +1,455 @@
++/* Automatically generated; do not edit */
++#include <types.h>
++#include <lib.h>
++#include "autoconf.h"
++
++static void autoconf_beep(struct beep_softc *, int);
++static void autoconf_con(struct con_softc *, int);
++static void autoconf_emu(struct emu_softc *, int);
++static void autoconf_lhd(struct lhd_softc *, int);
++static void autoconf_lrandom(struct lrandom_softc *, int);
++static void autoconf_lser(struct lser_softc *, int);
++static void autoconf_ltimer(struct ltimer_softc *, int);
++static void autoconf_ltrace(struct ltrace_softc *, int);
++static void autoconf_pseudorand(struct pseudorand_softc *, int);
++static void autoconf_random(struct random_softc *, int);
++static void autoconf_rtclock(struct rtclock_softc *, int);
++static int nextunit_beep;
++static int nextunit_con;
++static int nextunit_emu;
++static int nextunit_lhd;
++static int nextunit_lrandom;
++static int nextunit_lser;
++static int nextunit_ltimer;
++static int nextunit_ltrace;
++static int nextunit_random;
++static int nextunit_rtclock;
++
++static
++int
++tryattach_emu_to_lamebus(int devunit, struct lamebus_softc *bus, int busunit)
++{
++	struct emu_softc *dev;
++	int result;
++
++	dev = attach_emu_to_lamebus(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("emu%d at lamebus%d", devunit, busunit);
++	result = config_emu(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_emu = devunit+1;
++	autoconf_emu(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_ltrace_to_lamebus(int devunit, struct lamebus_softc *bus, int busunit)
++{
++	struct ltrace_softc *dev;
++	int result;
++
++	dev = attach_ltrace_to_lamebus(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("ltrace%d at lamebus%d", devunit, busunit);
++	result = config_ltrace(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_ltrace = devunit+1;
++	autoconf_ltrace(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_ltimer_to_lamebus(int devunit, struct lamebus_softc *bus, int busunit)
++{
++	struct ltimer_softc *dev;
++	int result;
++
++	dev = attach_ltimer_to_lamebus(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("ltimer%d at lamebus%d", devunit, busunit);
++	result = config_ltimer(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_ltimer = devunit+1;
++	autoconf_ltimer(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_lrandom_to_lamebus(int devunit, struct lamebus_softc *bus, int busunit)
++{
++	struct lrandom_softc *dev;
++	int result;
++
++	dev = attach_lrandom_to_lamebus(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("lrandom%d at lamebus%d", devunit, busunit);
++	result = config_lrandom(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_lrandom = devunit+1;
++	autoconf_lrandom(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_lhd_to_lamebus(int devunit, struct lamebus_softc *bus, int busunit)
++{
++	struct lhd_softc *dev;
++	int result;
++
++	dev = attach_lhd_to_lamebus(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("lhd%d at lamebus%d", devunit, busunit);
++	result = config_lhd(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_lhd = devunit+1;
++	autoconf_lhd(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_lser_to_lamebus(int devunit, struct lamebus_softc *bus, int busunit)
++{
++	struct lser_softc *dev;
++	int result;
++
++	dev = attach_lser_to_lamebus(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("lser%d at lamebus%d", devunit, busunit);
++	result = config_lser(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_lser = devunit+1;
++	autoconf_lser(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_beep_to_ltimer(int devunit, struct ltimer_softc *bus, int busunit)
++{
++	struct beep_softc *dev;
++	int result;
++
++	dev = attach_beep_to_ltimer(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("beep%d at ltimer%d", devunit, busunit);
++	result = config_beep(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_beep = devunit+1;
++	autoconf_beep(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_con_to_lser(int devunit, struct lser_softc *bus, int busunit)
++{
++	struct con_softc *dev;
++	int result;
++
++	dev = attach_con_to_lser(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("con%d at lser%d", devunit, busunit);
++	result = config_con(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_con = devunit+1;
++	autoconf_con(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_rtclock_to_ltimer(int devunit, struct ltimer_softc *bus, int busunit)
++{
++	struct rtclock_softc *dev;
++	int result;
++
++	dev = attach_rtclock_to_ltimer(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("rtclock%d at ltimer%d", devunit, busunit);
++	result = config_rtclock(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_rtclock = devunit+1;
++	autoconf_rtclock(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_random_to_lrandom(int devunit, struct lrandom_softc *bus, int busunit)
++{
++	struct random_softc *dev;
++	int result;
++
++	dev = attach_random_to_lrandom(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("random%d at lrandom%d", devunit, busunit);
++	result = config_random(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_random = devunit+1;
++	autoconf_random(dev, devunit);
++	return 0;
++}
++
++static
++int
++tryattach_random_to_pseudorand(int devunit, struct pseudorand_softc *bus, int busunit)
++{
++	struct random_softc *dev;
++	int result;
++
++	dev = attach_random_to_pseudorand(devunit, bus);
++	if (dev==NULL) {
++		return -1;
++	}
++	kprintf("random%d at pseudorand%d", devunit, busunit);
++	result = config_random(dev, devunit);
++	if (result != 0) {
++		kprintf(": %s\n", strerror(result));
++		/* should really clean up dev */
++		return result;
++	}
++	kprintf("\n");
++	nextunit_random = devunit+1;
++	autoconf_random(dev, devunit);
++	return 0;
++}
++
++
++static
++void
++autoconf_con(struct con_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++static
++void
++autoconf_lser(struct lser_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++	{
++		if (nextunit_con <= 0) {
++			tryattach_con_to_lser(0, bus, busunit);
++		}
++	}
++}
++
++static
++void
++autoconf_lhd(struct lhd_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++static
++void
++autoconf_emu(struct emu_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++void
++autoconf_pseudorand(struct pseudorand_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++	if (busunit==0) {
++		if (nextunit_random <= 0) {
++			tryattach_random_to_pseudorand(0, bus, busunit);
++		}
++	}
++}
++
++static
++void
++autoconf_random(struct random_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++static
++void
++autoconf_ltimer(struct ltimer_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++	{
++		if (nextunit_beep <= 0) {
++			tryattach_beep_to_ltimer(0, bus, busunit);
++		}
++	}
++	{
++		if (nextunit_rtclock <= 0) {
++			tryattach_rtclock_to_ltimer(0, bus, busunit);
++		}
++	}
++}
++
++void
++autoconf_lamebus(struct lamebus_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++	{
++		int result, devunit=nextunit_emu;
++		do {
++			result = tryattach_emu_to_lamebus(devunit, bus, busunit);
++			devunit++;
++		} while (result==0);
++	}
++	{
++		int result, devunit=nextunit_ltrace;
++		do {
++			result = tryattach_ltrace_to_lamebus(devunit, bus, busunit);
++			devunit++;
++		} while (result==0);
++	}
++	{
++		int result, devunit=nextunit_ltimer;
++		do {
++			result = tryattach_ltimer_to_lamebus(devunit, bus, busunit);
++			devunit++;
++		} while (result==0);
++	}
++	{
++		int result, devunit=nextunit_lrandom;
++		do {
++			result = tryattach_lrandom_to_lamebus(devunit, bus, busunit);
++			devunit++;
++		} while (result==0);
++	}
++	{
++		int result, devunit=nextunit_lhd;
++		do {
++			result = tryattach_lhd_to_lamebus(devunit, bus, busunit);
++			devunit++;
++		} while (result==0);
++	}
++	{
++		int result, devunit=nextunit_lser;
++		do {
++			result = tryattach_lser_to_lamebus(devunit, bus, busunit);
++			devunit++;
++		} while (result==0);
++	}
++}
++
++static
++void
++autoconf_beep(struct beep_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++static
++void
++autoconf_lrandom(struct lrandom_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++	{
++		if (nextunit_random <= 0) {
++			tryattach_random_to_lrandom(0, bus, busunit);
++		}
++	}
++}
++
++static
++void
++autoconf_rtclock(struct rtclock_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++static
++void
++autoconf_ltrace(struct ltrace_softc *bus, int busunit)
++{
++	(void)bus; (void)busunit;
++}
++
++void
++pseudoconfig(void)
++{
++	{
++		struct pseudorand_softc *s;
++		
++		s = pseudoattach_pseudorand(0);
++		if (s!=NULL) {
++			kprintf("pseudorand0 (virtual)\n");
++			autoconf_pseudorand(s, 0);
++		}
++	}
++}
++
+diff --git a/kern/compile/ASST1/autoconf.h b/kern/compile/ASST1/autoconf.h
+new file mode 100644
+index 0000000..13ab76c
+--- /dev/null
++++ b/kern/compile/ASST1/autoconf.h
+@@ -0,0 +1,48 @@
++/* Automatically generated; do not edit */
++#ifndef _AUTOCONF_H_
++#define _AUTOCONF_H_
++
++struct lamebus_softc;
++struct emu_softc;
++struct ltrace_softc;
++struct ltimer_softc;
++struct lrandom_softc;
++struct lhd_softc;
++struct lser_softc;
++struct beep_softc;
++struct con_softc;
++struct rtclock_softc;
++struct random_softc;
++struct pseudorand_softc;
++struct random_softc;
++
++void autoconf_lamebus(struct lamebus_softc *dev, int unit);
++
++struct emu_softc *attach_emu_to_lamebus(int devunit, struct lamebus_softc *bus);
++struct ltrace_softc *attach_ltrace_to_lamebus(int devunit, struct lamebus_softc *bus);
++struct ltimer_softc *attach_ltimer_to_lamebus(int devunit, struct lamebus_softc *bus);
++struct lrandom_softc *attach_lrandom_to_lamebus(int devunit, struct lamebus_softc *bus);
++struct lhd_softc *attach_lhd_to_lamebus(int devunit, struct lamebus_softc *bus);
++struct lser_softc *attach_lser_to_lamebus(int devunit, struct lamebus_softc *bus);
++struct beep_softc *attach_beep_to_ltimer(int devunit, struct ltimer_softc *bus);
++struct con_softc *attach_con_to_lser(int devunit, struct lser_softc *bus);
++struct rtclock_softc *attach_rtclock_to_ltimer(int devunit, struct ltimer_softc *bus);
++struct random_softc *attach_random_to_lrandom(int devunit, struct lrandom_softc *bus);
++struct pseudorand_softc *pseudoattach_pseudorand(int devunit);
++struct random_softc *attach_random_to_pseudorand(int devunit, struct pseudorand_softc *bus);
++
++int config_emu(struct emu_softc *dev, int unit);
++int config_ltrace(struct ltrace_softc *dev, int unit);
++int config_ltimer(struct ltimer_softc *dev, int unit);
++int config_lrandom(struct lrandom_softc *dev, int unit);
++int config_lhd(struct lhd_softc *dev, int unit);
++int config_lser(struct lser_softc *dev, int unit);
++int config_beep(struct beep_softc *dev, int unit);
++int config_con(struct con_softc *dev, int unit);
++int config_rtclock(struct rtclock_softc *dev, int unit);
++int config_random(struct random_softc *dev, int unit);
++int config_random(struct random_softc *dev, int unit);
++
++void pseudoconfig(void);
++
++#endif /* _AUTOCONF_H_ */
+diff --git a/kern/compile/ASST1/autoconf.o b/kern/compile/ASST1/autoconf.o
+new file mode 100644
+index 0000000..c55d946
+Binary files /dev/null and b/kern/compile/ASST1/autoconf.o differ
+diff --git a/kern/compile/ASST1/beep.o b/kern/compile/ASST1/beep.o
+new file mode 100644
+index 0000000..c2eab02
+Binary files /dev/null and b/kern/compile/ASST1/beep.o differ
+diff --git a/kern/compile/ASST1/beep_ltimer.o b/kern/compile/ASST1/beep_ltimer.o
+new file mode 100644
+index 0000000..0e7df43
+Binary files /dev/null and b/kern/compile/ASST1/beep_ltimer.o differ
+diff --git a/kern/compile/ASST1/bitmap.o b/kern/compile/ASST1/bitmap.o
+new file mode 100644
+index 0000000..76e20e9
+Binary files /dev/null and b/kern/compile/ASST1/bitmap.o differ
+diff --git a/kern/compile/ASST1/bitmaptest.o b/kern/compile/ASST1/bitmaptest.o
+new file mode 100644
+index 0000000..13172bc
+Binary files /dev/null and b/kern/compile/ASST1/bitmaptest.o differ
+diff --git a/kern/compile/ASST1/bzero.o b/kern/compile/ASST1/bzero.o
+new file mode 100644
+index 0000000..ab4f397
+Binary files /dev/null and b/kern/compile/ASST1/bzero.o differ
+diff --git a/kern/compile/ASST1/cache_mips1.o b/kern/compile/ASST1/cache_mips1.o
+new file mode 100644
+index 0000000..87cbd17
+Binary files /dev/null and b/kern/compile/ASST1/cache_mips1.o differ
+diff --git a/kern/compile/ASST1/catlock.o b/kern/compile/ASST1/catlock.o
+new file mode 100644
+index 0000000..63b62d8
+Binary files /dev/null and b/kern/compile/ASST1/catlock.o differ
+diff --git a/kern/compile/ASST1/catsem.o b/kern/compile/ASST1/catsem.o
+new file mode 100644
+index 0000000..6aa6522
+Binary files /dev/null and b/kern/compile/ASST1/catsem.o differ
+diff --git a/kern/compile/ASST1/con_lser.o b/kern/compile/ASST1/con_lser.o
+new file mode 100644
+index 0000000..3d1af16
+Binary files /dev/null and b/kern/compile/ASST1/con_lser.o differ
+diff --git a/kern/compile/ASST1/console.o b/kern/compile/ASST1/console.o
+new file mode 100644
+index 0000000..b172b2e
+Binary files /dev/null and b/kern/compile/ASST1/console.o differ
+diff --git a/kern/compile/ASST1/copyinout.o b/kern/compile/ASST1/copyinout.o
+new file mode 100644
+index 0000000..941a896
+Binary files /dev/null and b/kern/compile/ASST1/copyinout.o differ
+diff --git a/kern/compile/ASST1/defs.mk b/kern/compile/ASST1/defs.mk
+new file mode 100644
+index 0000000..09db3ea
+--- /dev/null
++++ b/kern/compile/ASST1/defs.mk
+@@ -0,0 +1,5 @@
++# Automatically generated by config; do not edit
++S=../..
++ARCH=mips
++DEBUGFLAGS=-g
++CONFNAME=ASST1
+diff --git a/kern/compile/ASST1/depend.mk b/kern/compile/ASST1/depend.mk
+new file mode 100644
+index 0000000..3861979
+--- /dev/null
++++ b/kern/compile/ASST1/depend.mk
+@@ -0,0 +1,357 @@
++console.o: ../../dev/generic/console.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h machine/spl.h \
++  ../../include/synch.h ../../dev/generic/console.h ../../include/dev.h \
++  ../../include/vfs.h ../../include/uio.h autoconf.h
++emu.o: ../../dev/lamebus/emu.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/unistd.h ../../include/kern/stat.h \
++  ../../include/lib.h machine/setjmp.h ../../include/synch.h \
++  ../../include/array.h ../../include/uio.h ../../include/vfs.h \
++  ../../include/emufs.h ../../include/vnode.h ../../include/fs.h \
++  ../../dev/lamebus/emu.h machine/bus.h machine/vm.h \
++  ../../dev/lamebus/lamebus.h autoconf.h
++lser.o: ../../dev/lamebus/lser.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  machine/spl.h machine/bus.h machine/vm.h ../../dev/lamebus/lamebus.h \
++  ../../dev/lamebus/lser.h autoconf.h
++lhd.o: ../../dev/lamebus/lhd.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/kern/errno.h machine/bus.h \
++  machine/vm.h ../../dev/lamebus/lamebus.h ../../include/uio.h \
++  ../../include/vfs.h ../../dev/lamebus/lhd.h ../../include/dev.h \
++  autoconf.h
++pseudorand.o: ../../dev/generic/pseudorand.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/uio.h ../../dev/generic/pseudorand.h \
++  autoconf.h
++random.o: ../../dev/generic/random.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/unistd.h ../../include/lib.h machine/setjmp.h \
++  ../../include/uio.h ../../include/vfs.h ../../dev/generic/random.h \
++  ../../include/dev.h autoconf.h
++ltimer.o: ../../dev/lamebus/ltimer.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/clock.h opt-synchprobs.h machine/bus.h \
++  machine/vm.h ../../dev/lamebus/lamebus.h ../../dev/lamebus/ltimer.h \
++  autoconf.h
++lamebus.o: ../../dev/lamebus/lamebus.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h machine/spl.h ../../dev/lamebus/lamebus.h
++lrandom.o: ../../dev/lamebus/lrandom.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/uio.h machine/bus.h machine/vm.h \
++  ../../dev/lamebus/lamebus.h ../../dev/lamebus/lrandom.h autoconf.h
++beep.o: ../../dev/generic/beep.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../dev/generic/beep.h \
++  autoconf.h
++ltrace.o: ../../dev/lamebus/ltrace.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h machine/bus.h machine/vm.h ../../dev/lamebus/lamebus.h \
++  ../../dev/lamebus/ltrace.h autoconf.h
++rtclock.o: ../../dev/generic/rtclock.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/clock.h \
++  opt-synchprobs.h ../../dev/generic/rtclock.h autoconf.h
++ltimer_att.o: ../../dev/lamebus/ltimer_att.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/lamebus/lamebus.h ../../dev/lamebus/ltimer.h \
++  autoconf.h
++con_lser.o: ../../dev/lamebus/con_lser.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/generic/console.h ../../dev/lamebus/lser.h \
++  autoconf.h
++lhd_att.o: ../../dev/lamebus/lhd_att.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/lamebus/lamebus.h ../../dev/lamebus/lhd.h \
++  ../../include/dev.h autoconf.h
++random_lrandom.o: ../../dev/lamebus/random_lrandom.c \
++  ../../include/types.h machine/types.h ../../include/kern/types.h \
++  ../../include/lib.h machine/setjmp.h ../../dev/generic/random.h \
++  ../../include/dev.h ../../dev/lamebus/lrandom.h autoconf.h
++rtclock_ltimer.o: ../../dev/lamebus/rtclock_ltimer.c \
++  ../../include/types.h machine/types.h ../../include/kern/types.h \
++  ../../include/lib.h machine/setjmp.h ../../dev/generic/rtclock.h \
++  ../../dev/lamebus/ltimer.h autoconf.h
++ltrace_att.o: ../../dev/lamebus/ltrace_att.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/lamebus/lamebus.h ../../dev/lamebus/ltrace.h \
++  autoconf.h
++lser_att.o: ../../dev/lamebus/lser_att.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/lamebus/lamebus.h ../../dev/lamebus/lser.h \
++  autoconf.h
++lrandom_att.o: ../../dev/lamebus/lrandom_att.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/lamebus/lamebus.h \
++  ../../dev/lamebus/lrandom.h autoconf.h
++emu_att.o: ../../dev/lamebus/emu_att.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/lamebus/lamebus.h ../../dev/lamebus/emu.h \
++  autoconf.h
++beep_ltimer.o: ../../dev/lamebus/beep_ltimer.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../dev/generic/beep.h ../../dev/lamebus/ltimer.h \
++  autoconf.h
++pseudorand_att.o: ../../dev/generic/pseudorand_att.c \
++  ../../include/types.h machine/types.h ../../include/kern/types.h \
++  ../../include/lib.h machine/setjmp.h ../../dev/generic/random.h \
++  ../../include/dev.h ../../dev/generic/pseudorand.h autoconf.h
++catlock.o: ../../asst1/catlock.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/test.h ../../include/thread.h machine/pcb.h
++catsem.o: ../../asst1/catsem.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/test.h ../../include/thread.h machine/pcb.h
++sfs_vnode.o: ../../fs/sfs/sfs_vnode.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/synch.h ../../include/array.h \
++  ../../include/bitmap.h ../../include/kern/stat.h \
++  ../../include/kern/errno.h ../../include/kern/unistd.h \
++  ../../include/uio.h ../../include/dev.h ../../include/sfs.h \
++  ../../include/vnode.h ../../include/fs.h ../../include/kern/sfs.h
++sfs_fs.o: ../../fs/sfs/sfs_fs.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/kern/errno.h ../../include/array.h ../../include/bitmap.h \
++  ../../include/uio.h ../../include/dev.h ../../include/sfs.h \
++  ../../include/vnode.h ../../include/fs.h ../../include/kern/sfs.h \
++  ../../include/vfs.h
++dumbvm.o: ../../arch/mips/mips/dumbvm.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/thread.h \
++  machine/pcb.h ../../include/curthread.h ../../include/addrspace.h \
++  ../../include/vm.h machine/vm.h opt-dumbvm.h machine/spl.h \
++  machine/tlb.h
++stoplight.o: ../../asst1/stoplight.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/test.h ../../include/thread.h \
++  machine/pcb.h
++sfs_io.o: ../../fs/sfs/sfs_io.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/uio.h \
++  ../../include/sfs.h ../../include/vnode.h ../../include/fs.h \
++  ../../include/kern/sfs.h ../../include/dev.h
++cache_mips1.o: ../../arch/mips/mips/cache_mips1.S machine/asmdefs.h
++exception.o: ../../arch/mips/mips/exception.S machine/asmdefs.h \
++  machine/specialreg.h
++lamebus_mips.o: ../../arch/mips/mips/lamebus_mips.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/unistd.h \
++  ../../include/lib.h machine/setjmp.h ../../include/synch.h \
++  machine/spl.h machine/pcb.h ../../include/dev.h machine/bus.h \
++  machine/vm.h ../../dev/lamebus/lamebus.h autoconf.h
++interrupt.o: ../../arch/mips/mips/interrupt.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h machine/bus.h machine/vm.h ../../dev/lamebus/lamebus.h \
++  machine/spl.h machine/pcb.h
++pcb.o: ../../arch/mips/mips/pcb.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  machine/pcb.h machine/spl.h machine/switchframe.h \
++  ../../include/thread.h
++ram.o: ../../arch/mips/mips/ram.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/vm.h machine/vm.h machine/pcb.h
++spl.o: ../../arch/mips/mips/spl.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  machine/spl.h machine/specialreg.h
++start.o: ../../arch/mips/mips/start.S machine/asmdefs.h \
++  machine/specialreg.h
++switch.o: ../../arch/mips/mips/switch.S machine/asmdefs.h
++syscall.o: ../../arch/mips/mips/syscall.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h machine/pcb.h machine/spl.h \
++  machine/trapframe.h ../../include/kern/callno.h ../../include/syscall.h
++threadstart.o: ../../arch/mips/mips/threadstart.S machine/asmdefs.h
++trap.o: ../../arch/mips/mips/trap.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  machine/trapframe.h machine/specialreg.h machine/pcb.h machine/spl.h \
++  ../../include/vm.h machine/vm.h ../../include/thread.h \
++  ../../include/curthread.h
++tlb_mips1.o: ../../arch/mips/mips/tlb_mips1.S machine/asmdefs.h \
++  machine/specialreg.h
++mips-setjmp.o: ../../../lib/libc/mips-setjmp.S machine/asmdefs.h
++copyinout.o: ../../lib/copyinout.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h machine/pcb.h ../../include/vm.h \
++  machine/vm.h ../../include/thread.h ../../include/curthread.h
++array.o: ../../lib/array.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/array.h
++bitmap.o: ../../lib/bitmap.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/kern/errno.h ../../include/bitmap.h
++queue.o: ../../lib/queue.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/queue.h
++kheap.o: ../../lib/kheap.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/vm.h machine/vm.h machine/spl.h
++kprintf.o: ../../lib/kprintf.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/stdarg.h ../../include/lib.h \
++  machine/setjmp.h ../../include/kern/unistd.h ../../include/synch.h \
++  ../../include/vfs.h ../../include/thread.h machine/pcb.h machine/spl.h
++kgets.o: ../../lib/kgets.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h
++misc.o: ../../lib/misc.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errmsg.h \
++  ../../include/lib.h machine/setjmp.h
++ntoh.o: ../../lib/ntoh.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h
++__printf.o: ../../../lib/libc/__printf.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/stdarg.h
++snprintf.o: ../../../lib/libc/snprintf.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/stdarg.h
++atoi.o: ../../../lib/libc/atoi.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h
++bzero.o: ../../../lib/libc/bzero.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h
++memcpy.o: ../../../lib/libc/memcpy.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++memmove.o: ../../../lib/libc/memmove.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strcat.o: ../../../lib/libc/strcat.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strchr.o: ../../../lib/libc/strchr.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strcmp.o: ../../../lib/libc/strcmp.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strcpy.o: ../../../lib/libc/strcpy.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strlen.o: ../../../lib/libc/strlen.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strrchr.o: ../../../lib/libc/strrchr.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++strtok_r.o: ../../../lib/libc/strtok_r.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h
++init.o: ../../dev/init.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  machine/spl.h ../../include/dev.h autoconf.h
++device.o: ../../fs/vfs/device.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/kern/errno.h \
++  ../../include/kern/unistd.h ../../include/kern/stat.h \
++  ../../include/vnode.h ../../include/uio.h ../../include/dev.h
++vfscwd.o: ../../fs/vfs/vfscwd.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/kern/errno.h \
++  ../../include/kern/stat.h ../../include/vfs.h ../../include/fs.h \
++  ../../include/vnode.h ../../include/uio.h ../../include/thread.h \
++  machine/pcb.h ../../include/curthread.h
++vfslist.o: ../../fs/vfs/vfslist.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/array.h ../../include/kern/errno.h \
++  ../../include/vfs.h ../../include/vnode.h ../../include/fs.h \
++  ../../include/dev.h
++vfslookup.o: ../../fs/vfs/vfslookup.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/limits.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/vfs.h ../../include/vnode.h \
++  ../../include/fs.h
++vfspath.o: ../../fs/vfs/vfspath.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/limits.h ../../include/kern/unistd.h \
++  ../../include/vfs.h ../../include/vnode.h ../../include/lib.h \
++  machine/setjmp.h
++vnode.o: ../../fs/vfs/vnode.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/synch.h \
++  ../../include/vnode.h
++devnull.o: ../../fs/vfs/devnull.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/vfs.h \
++  ../../include/dev.h ../../include/uio.h
++hardclock.o: ../../thread/hardclock.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h machine/spl.h ../../include/thread.h machine/pcb.h \
++  ../../include/clock.h opt-synchprobs.h
++synch.o: ../../thread/synch.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/thread.h machine/pcb.h \
++  ../../include/curthread.h machine/spl.h
++scheduler.o: ../../thread/scheduler.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/scheduler.h ../../include/thread.h \
++  machine/pcb.h machine/spl.h ../../include/queue.h
++thread.o: ../../thread/thread.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/kern/errno.h ../../include/array.h machine/spl.h \
++  machine/pcb.h ../../include/thread.h ../../include/curthread.h \
++  ../../include/scheduler.h ../../include/addrspace.h ../../include/vm.h \
++  machine/vm.h opt-dumbvm.h ../../include/vnode.h opt-synchprobs.h
++main.o: ../../main/main.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/unistd.h ../../include/lib.h machine/setjmp.h \
++  machine/spl.h ../../include/test.h ../../include/synch.h \
++  ../../include/thread.h machine/pcb.h ../../include/scheduler.h \
++  ../../include/dev.h ../../include/vfs.h ../../include/vm.h machine/vm.h \
++  ../../include/syscall.h ../../include/version.h
++menu.o: ../../main/menu.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/unistd.h ../../include/kern/limits.h \
++  ../../include/lib.h machine/setjmp.h ../../include/clock.h \
++  opt-synchprobs.h ../../include/thread.h machine/pcb.h \
++  ../../include/syscall.h ../../include/uio.h ../../include/vfs.h \
++  ../../include/sfs.h ../../include/vnode.h ../../include/fs.h \
++  ../../include/kern/sfs.h ../../include/test.h opt-synchprobs.h \
++  opt-sfs.h opt-net.h
++loadelf.o: ../../userprog/loadelf.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/lib.h machine/setjmp.h ../../include/uio.h \
++  ../../include/elf.h ../../include/addrspace.h ../../include/vm.h \
++  machine/vm.h opt-dumbvm.h ../../include/thread.h machine/pcb.h \
++  ../../include/curthread.h ../../include/vnode.h
++runprogram.o: ../../userprog/runprogram.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/kern/unistd.h \
++  ../../include/kern/errno.h ../../include/lib.h machine/setjmp.h \
++  ../../include/addrspace.h ../../include/vm.h machine/vm.h opt-dumbvm.h \
++  ../../include/thread.h machine/pcb.h ../../include/curthread.h \
++  ../../include/vfs.h ../../include/test.h
++uio.o: ../../userprog/uio.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/uio.h ../../include/thread.h machine/pcb.h \
++  ../../include/curthread.h
++arraytest.o: ../../test/arraytest.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/array.h ../../include/test.h
++bitmaptest.o: ../../test/bitmaptest.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/bitmap.h ../../include/test.h
++queuetest.o: ../../test/queuetest.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/queue.h ../../include/test.h
++threadtest.o: ../../test/threadtest.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/synch.h ../../include/thread.h \
++  machine/pcb.h ../../include/test.h
++tt3.o: ../../test/tt3.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  machine/spl.h ../../include/synch.h ../../include/thread.h \
++  machine/pcb.h ../../include/test.h opt-synchprobs.h
++synchtest.o: ../../test/synchtest.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/thread.h machine/pcb.h \
++  ../../include/test.h ../../include/clock.h opt-synchprobs.h
++malloctest.o: ../../test/malloctest.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../include/synch.h ../../include/thread.h \
++  machine/pcb.h ../../include/test.h
++fstest.o: ../../test/fstest.c ../../include/types.h machine/types.h \
++  ../../include/kern/types.h ../../include/kern/errno.h \
++  ../../include/kern/unistd.h ../../include/lib.h machine/setjmp.h \
++  ../../include/synch.h ../../include/fs.h ../../include/vnode.h \
++  ../../include/vfs.h ../../include/uio.h ../../include/test.h \
++  ../../include/thread.h machine/pcb.h
++autoconf.o: ../../compile/ASST1/autoconf.c ../../include/types.h \
++  machine/types.h ../../include/kern/types.h ../../include/lib.h \
++  machine/setjmp.h ../../compile/ASST1/autoconf.h
+diff --git a/kern/compile/ASST1/device.o b/kern/compile/ASST1/device.o
+new file mode 100644
+index 0000000..40e6d6d
+Binary files /dev/null and b/kern/compile/ASST1/device.o differ
+diff --git a/kern/compile/ASST1/devnull.o b/kern/compile/ASST1/devnull.o
+new file mode 100644
+index 0000000..3cf2445
+Binary files /dev/null and b/kern/compile/ASST1/devnull.o differ
+diff --git a/kern/compile/ASST1/dumbvm.o b/kern/compile/ASST1/dumbvm.o
+new file mode 100644
+index 0000000..6cc33bc
+Binary files /dev/null and b/kern/compile/ASST1/dumbvm.o differ
+diff --git a/kern/compile/ASST1/emu.o b/kern/compile/ASST1/emu.o
+new file mode 100644
+index 0000000..786c576
+Binary files /dev/null and b/kern/compile/ASST1/emu.o differ
+diff --git a/kern/compile/ASST1/emu_att.o b/kern/compile/ASST1/emu_att.o
+new file mode 100644
+index 0000000..b51c4e0
+Binary files /dev/null and b/kern/compile/ASST1/emu_att.o differ
+diff --git a/kern/compile/ASST1/exception.o b/kern/compile/ASST1/exception.o
+new file mode 100644
+index 0000000..aa04a57
+Binary files /dev/null and b/kern/compile/ASST1/exception.o differ
+diff --git a/kern/compile/ASST1/files.mk b/kern/compile/ASST1/files.mk
+new file mode 100644
+index 0000000..8a8ce3a
+--- /dev/null
++++ b/kern/compile/ASST1/files.mk
+@@ -0,0 +1,461 @@
++# Automatically generated by config; do not edit
++console.o: ${S}/dev/generic/console.c
++	${COMPILE.c} ${S}/dev/generic/console.c
++SRCS+=${S}/dev/generic/console.c
++OBJS+=console.o
++
++emu.o: ${S}/dev/lamebus/emu.c
++	${COMPILE.c} ${S}/dev/lamebus/emu.c
++SRCS+=${S}/dev/lamebus/emu.c
++OBJS+=emu.o
++
++lser.o: ${S}/dev/lamebus/lser.c
++	${COMPILE.c} ${S}/dev/lamebus/lser.c
++SRCS+=${S}/dev/lamebus/lser.c
++OBJS+=lser.o
++
++lhd.o: ${S}/dev/lamebus/lhd.c
++	${COMPILE.c} ${S}/dev/lamebus/lhd.c
++SRCS+=${S}/dev/lamebus/lhd.c
++OBJS+=lhd.o
++
++pseudorand.o: ${S}/dev/generic/pseudorand.c
++	${COMPILE.c} ${S}/dev/generic/pseudorand.c
++SRCS+=${S}/dev/generic/pseudorand.c
++OBJS+=pseudorand.o
++
++random.o: ${S}/dev/generic/random.c
++	${COMPILE.c} ${S}/dev/generic/random.c
++SRCS+=${S}/dev/generic/random.c
++OBJS+=random.o
++
++ltimer.o: ${S}/dev/lamebus/ltimer.c
++	${COMPILE.c} ${S}/dev/lamebus/ltimer.c
++SRCS+=${S}/dev/lamebus/ltimer.c
++OBJS+=ltimer.o
++
++lamebus.o: ${S}/dev/lamebus/lamebus.c
++	${COMPILE.c} ${S}/dev/lamebus/lamebus.c
++SRCS+=${S}/dev/lamebus/lamebus.c
++OBJS+=lamebus.o
++
++lrandom.o: ${S}/dev/lamebus/lrandom.c
++	${COMPILE.c} ${S}/dev/lamebus/lrandom.c
++SRCS+=${S}/dev/lamebus/lrandom.c
++OBJS+=lrandom.o
++
++beep.o: ${S}/dev/generic/beep.c
++	${COMPILE.c} ${S}/dev/generic/beep.c
++SRCS+=${S}/dev/generic/beep.c
++OBJS+=beep.o
++
++ltrace.o: ${S}/dev/lamebus/ltrace.c
++	${COMPILE.c} ${S}/dev/lamebus/ltrace.c
++SRCS+=${S}/dev/lamebus/ltrace.c
++OBJS+=ltrace.o
++
++rtclock.o: ${S}/dev/generic/rtclock.c
++	${COMPILE.c} ${S}/dev/generic/rtclock.c
++SRCS+=${S}/dev/generic/rtclock.c
++OBJS+=rtclock.o
++
++ltimer_att.o: ${S}/dev/lamebus/ltimer_att.c
++	${COMPILE.c} ${S}/dev/lamebus/ltimer_att.c
++SRCS+=${S}/dev/lamebus/ltimer_att.c
++OBJS+=ltimer_att.o
++
++con_lser.o: ${S}/dev/lamebus/con_lser.c
++	${COMPILE.c} ${S}/dev/lamebus/con_lser.c
++SRCS+=${S}/dev/lamebus/con_lser.c
++OBJS+=con_lser.o
++
++lhd_att.o: ${S}/dev/lamebus/lhd_att.c
++	${COMPILE.c} ${S}/dev/lamebus/lhd_att.c
++SRCS+=${S}/dev/lamebus/lhd_att.c
++OBJS+=lhd_att.o
++
++random_lrandom.o: ${S}/dev/lamebus/random_lrandom.c
++	${COMPILE.c} ${S}/dev/lamebus/random_lrandom.c
++SRCS+=${S}/dev/lamebus/random_lrandom.c
++OBJS+=random_lrandom.o
++
++rtclock_ltimer.o: ${S}/dev/lamebus/rtclock_ltimer.c
++	${COMPILE.c} ${S}/dev/lamebus/rtclock_ltimer.c
++SRCS+=${S}/dev/lamebus/rtclock_ltimer.c
++OBJS+=rtclock_ltimer.o
++
++ltrace_att.o: ${S}/dev/lamebus/ltrace_att.c
++	${COMPILE.c} ${S}/dev/lamebus/ltrace_att.c
++SRCS+=${S}/dev/lamebus/ltrace_att.c
++OBJS+=ltrace_att.o
++
++lser_att.o: ${S}/dev/lamebus/lser_att.c
++	${COMPILE.c} ${S}/dev/lamebus/lser_att.c
++SRCS+=${S}/dev/lamebus/lser_att.c
++OBJS+=lser_att.o
++
++lrandom_att.o: ${S}/dev/lamebus/lrandom_att.c
++	${COMPILE.c} ${S}/dev/lamebus/lrandom_att.c
++SRCS+=${S}/dev/lamebus/lrandom_att.c
++OBJS+=lrandom_att.o
++
++emu_att.o: ${S}/dev/lamebus/emu_att.c
++	${COMPILE.c} ${S}/dev/lamebus/emu_att.c
++SRCS+=${S}/dev/lamebus/emu_att.c
++OBJS+=emu_att.o
++
++beep_ltimer.o: ${S}/dev/lamebus/beep_ltimer.c
++	${COMPILE.c} ${S}/dev/lamebus/beep_ltimer.c
++SRCS+=${S}/dev/lamebus/beep_ltimer.c
++OBJS+=beep_ltimer.o
++
++pseudorand_att.o: ${S}/dev/generic/pseudorand_att.c
++	${COMPILE.c} ${S}/dev/generic/pseudorand_att.c
++SRCS+=${S}/dev/generic/pseudorand_att.c
++OBJS+=pseudorand_att.o
++
++catlock.o: ${S}/asst1/catlock.c
++	${COMPILE.c} ${S}/asst1/catlock.c
++SRCS+=${S}/asst1/catlock.c
++OBJS+=catlock.o
++
++catsem.o: ${S}/asst1/catsem.c
++	${COMPILE.c} ${S}/asst1/catsem.c
++SRCS+=${S}/asst1/catsem.c
++OBJS+=catsem.o
++
++sfs_vnode.o: ${S}/fs/sfs/sfs_vnode.c
++	${COMPILE.c} ${S}/fs/sfs/sfs_vnode.c
++SRCS+=${S}/fs/sfs/sfs_vnode.c
++OBJS+=sfs_vnode.o
++
++sfs_fs.o: ${S}/fs/sfs/sfs_fs.c
++	${COMPILE.c} ${S}/fs/sfs/sfs_fs.c
++SRCS+=${S}/fs/sfs/sfs_fs.c
++OBJS+=sfs_fs.o
++
++dumbvm.o: ${S}/arch/mips/mips/dumbvm.c
++	${COMPILE.c} ${S}/arch/mips/mips/dumbvm.c
++SRCS+=${S}/arch/mips/mips/dumbvm.c
++OBJS+=dumbvm.o
++
++stoplight.o: ${S}/asst1/stoplight.c
++	${COMPILE.c} ${S}/asst1/stoplight.c
++SRCS+=${S}/asst1/stoplight.c
++OBJS+=stoplight.o
++
++sfs_io.o: ${S}/fs/sfs/sfs_io.c
++	${COMPILE.c} ${S}/fs/sfs/sfs_io.c
++SRCS+=${S}/fs/sfs/sfs_io.c
++OBJS+=sfs_io.o
++
++cache_mips1.o: ${S}/arch/mips/mips/cache_mips1.S
++	${COMPILE.S} ${S}/arch/mips/mips/cache_mips1.S
++SRCS+=${S}/arch/mips/mips/cache_mips1.S
++OBJS+=cache_mips1.o
++
++exception.o: ${S}/arch/mips/mips/exception.S
++	${COMPILE.S} ${S}/arch/mips/mips/exception.S
++SRCS+=${S}/arch/mips/mips/exception.S
++OBJS+=exception.o
++
++lamebus_mips.o: ${S}/arch/mips/mips/lamebus_mips.c
++	${COMPILE.c} ${S}/arch/mips/mips/lamebus_mips.c
++SRCS+=${S}/arch/mips/mips/lamebus_mips.c
++OBJS+=lamebus_mips.o
++
++interrupt.o: ${S}/arch/mips/mips/interrupt.c
++	${COMPILE.c} ${S}/arch/mips/mips/interrupt.c
++SRCS+=${S}/arch/mips/mips/interrupt.c
++OBJS+=interrupt.o
++
++pcb.o: ${S}/arch/mips/mips/pcb.c
++	${COMPILE.c} ${S}/arch/mips/mips/pcb.c
++SRCS+=${S}/arch/mips/mips/pcb.c
++OBJS+=pcb.o
++
++ram.o: ${S}/arch/mips/mips/ram.c
++	${COMPILE.c} ${S}/arch/mips/mips/ram.c
++SRCS+=${S}/arch/mips/mips/ram.c
++OBJS+=ram.o
++
++spl.o: ${S}/arch/mips/mips/spl.c
++	${COMPILE.c} ${S}/arch/mips/mips/spl.c
++SRCS+=${S}/arch/mips/mips/spl.c
++OBJS+=spl.o
++
++start.o: ${S}/arch/mips/mips/start.S
++	${COMPILE.S} ${S}/arch/mips/mips/start.S
++SRCS+=${S}/arch/mips/mips/start.S
++OBJS+=start.o
++
++switch.o: ${S}/arch/mips/mips/switch.S
++	${COMPILE.S} ${S}/arch/mips/mips/switch.S
++SRCS+=${S}/arch/mips/mips/switch.S
++OBJS+=switch.o
++
++syscall.o: ${S}/arch/mips/mips/syscall.c
++	${COMPILE.c} ${S}/arch/mips/mips/syscall.c
++SRCS+=${S}/arch/mips/mips/syscall.c
++OBJS+=syscall.o
++
++threadstart.o: ${S}/arch/mips/mips/threadstart.S
++	${COMPILE.S} ${S}/arch/mips/mips/threadstart.S
++SRCS+=${S}/arch/mips/mips/threadstart.S
++OBJS+=threadstart.o
++
++trap.o: ${S}/arch/mips/mips/trap.c
++	${COMPILE.c} ${S}/arch/mips/mips/trap.c
++SRCS+=${S}/arch/mips/mips/trap.c
++OBJS+=trap.o
++
++tlb_mips1.o: ${S}/arch/mips/mips/tlb_mips1.S
++	${COMPILE.S} ${S}/arch/mips/mips/tlb_mips1.S
++SRCS+=${S}/arch/mips/mips/tlb_mips1.S
++OBJS+=tlb_mips1.o
++
++mips-setjmp.o: ${S}/../lib/libc/mips-setjmp.S
++	${COMPILE.S} ${S}/../lib/libc/mips-setjmp.S
++SRCS+=${S}/../lib/libc/mips-setjmp.S
++OBJS+=mips-setjmp.o
++
++copyinout.o: ${S}/lib/copyinout.c
++	${COMPILE.c} ${S}/lib/copyinout.c
++SRCS+=${S}/lib/copyinout.c
++OBJS+=copyinout.o
++
++array.o: ${S}/lib/array.c
++	${COMPILE.c} ${S}/lib/array.c
++SRCS+=${S}/lib/array.c
++OBJS+=array.o
++
++bitmap.o: ${S}/lib/bitmap.c
++	${COMPILE.c} ${S}/lib/bitmap.c
++SRCS+=${S}/lib/bitmap.c
++OBJS+=bitmap.o
++
++queue.o: ${S}/lib/queue.c
++	${COMPILE.c} ${S}/lib/queue.c
++SRCS+=${S}/lib/queue.c
++OBJS+=queue.o
++
++kheap.o: ${S}/lib/kheap.c
++	${COMPILE.c} ${S}/lib/kheap.c
++SRCS+=${S}/lib/kheap.c
++OBJS+=kheap.o
++
++kprintf.o: ${S}/lib/kprintf.c
++	${COMPILE.c} ${S}/lib/kprintf.c
++SRCS+=${S}/lib/kprintf.c
++OBJS+=kprintf.o
++
++kgets.o: ${S}/lib/kgets.c
++	${COMPILE.c} ${S}/lib/kgets.c
++SRCS+=${S}/lib/kgets.c
++OBJS+=kgets.o
++
++misc.o: ${S}/lib/misc.c
++	${COMPILE.c} ${S}/lib/misc.c
++SRCS+=${S}/lib/misc.c
++OBJS+=misc.o
++
++ntoh.o: ${S}/lib/ntoh.c
++	${COMPILE.c} ${S}/lib/ntoh.c
++SRCS+=${S}/lib/ntoh.c
++OBJS+=ntoh.o
++
++__printf.o: ${S}/../lib/libc/__printf.c
++	${COMPILE.c} ${S}/../lib/libc/__printf.c
++SRCS+=${S}/../lib/libc/__printf.c
++OBJS+=__printf.o
++
++snprintf.o: ${S}/../lib/libc/snprintf.c
++	${COMPILE.c} ${S}/../lib/libc/snprintf.c
++SRCS+=${S}/../lib/libc/snprintf.c
++OBJS+=snprintf.o
++
++atoi.o: ${S}/../lib/libc/atoi.c
++	${COMPILE.c} ${S}/../lib/libc/atoi.c
++SRCS+=${S}/../lib/libc/atoi.c
++OBJS+=atoi.o
++
++bzero.o: ${S}/../lib/libc/bzero.c
++	${COMPILE.c} ${S}/../lib/libc/bzero.c
++SRCS+=${S}/../lib/libc/bzero.c
++OBJS+=bzero.o
++
++memcpy.o: ${S}/../lib/libc/memcpy.c
++	${COMPILE.c} ${S}/../lib/libc/memcpy.c
++SRCS+=${S}/../lib/libc/memcpy.c
++OBJS+=memcpy.o
++
++memmove.o: ${S}/../lib/libc/memmove.c
++	${COMPILE.c} ${S}/../lib/libc/memmove.c
++SRCS+=${S}/../lib/libc/memmove.c
++OBJS+=memmove.o
++
++strcat.o: ${S}/../lib/libc/strcat.c
++	${COMPILE.c} ${S}/../lib/libc/strcat.c
++SRCS+=${S}/../lib/libc/strcat.c
++OBJS+=strcat.o
++
++strchr.o: ${S}/../lib/libc/strchr.c
++	${COMPILE.c} ${S}/../lib/libc/strchr.c
++SRCS+=${S}/../lib/libc/strchr.c
++OBJS+=strchr.o
++
++strcmp.o: ${S}/../lib/libc/strcmp.c
++	${COMPILE.c} ${S}/../lib/libc/strcmp.c
++SRCS+=${S}/../lib/libc/strcmp.c
++OBJS+=strcmp.o
++
++strcpy.o: ${S}/../lib/libc/strcpy.c
++	${COMPILE.c} ${S}/../lib/libc/strcpy.c
++SRCS+=${S}/../lib/libc/strcpy.c
++OBJS+=strcpy.o
++
++strlen.o: ${S}/../lib/libc/strlen.c
++	${COMPILE.c} ${S}/../lib/libc/strlen.c
++SRCS+=${S}/../lib/libc/strlen.c
++OBJS+=strlen.o
++
++strrchr.o: ${S}/../lib/libc/strrchr.c
++	${COMPILE.c} ${S}/../lib/libc/strrchr.c
++SRCS+=${S}/../lib/libc/strrchr.c
++OBJS+=strrchr.o
++
++strtok_r.o: ${S}/../lib/libc/strtok_r.c
++	${COMPILE.c} ${S}/../lib/libc/strtok_r.c
++SRCS+=${S}/../lib/libc/strtok_r.c
++OBJS+=strtok_r.o
++
++init.o: ${S}/dev/init.c
++	${COMPILE.c} ${S}/dev/init.c
++SRCS+=${S}/dev/init.c
++OBJS+=init.o
++
++device.o: ${S}/fs/vfs/device.c
++	${COMPILE.c} ${S}/fs/vfs/device.c
++SRCS+=${S}/fs/vfs/device.c
++OBJS+=device.o
++
++vfscwd.o: ${S}/fs/vfs/vfscwd.c
++	${COMPILE.c} ${S}/fs/vfs/vfscwd.c
++SRCS+=${S}/fs/vfs/vfscwd.c
++OBJS+=vfscwd.o
++
++vfslist.o: ${S}/fs/vfs/vfslist.c
++	${COMPILE.c} ${S}/fs/vfs/vfslist.c
++SRCS+=${S}/fs/vfs/vfslist.c
++OBJS+=vfslist.o
++
++vfslookup.o: ${S}/fs/vfs/vfslookup.c
++	${COMPILE.c} ${S}/fs/vfs/vfslookup.c
++SRCS+=${S}/fs/vfs/vfslookup.c
++OBJS+=vfslookup.o
++
++vfspath.o: ${S}/fs/vfs/vfspath.c
++	${COMPILE.c} ${S}/fs/vfs/vfspath.c
++SRCS+=${S}/fs/vfs/vfspath.c
++OBJS+=vfspath.o
++
++vnode.o: ${S}/fs/vfs/vnode.c
++	${COMPILE.c} ${S}/fs/vfs/vnode.c
++SRCS+=${S}/fs/vfs/vnode.c
++OBJS+=vnode.o
++
++devnull.o: ${S}/fs/vfs/devnull.c
++	${COMPILE.c} ${S}/fs/vfs/devnull.c
++SRCS+=${S}/fs/vfs/devnull.c
++OBJS+=devnull.o
++
++hardclock.o: ${S}/thread/hardclock.c
++	${COMPILE.c} ${S}/thread/hardclock.c
++SRCS+=${S}/thread/hardclock.c
++OBJS+=hardclock.o
++
++synch.o: ${S}/thread/synch.c
++	${COMPILE.c} ${S}/thread/synch.c
++SRCS+=${S}/thread/synch.c
++OBJS+=synch.o
++
++scheduler.o: ${S}/thread/scheduler.c
++	${COMPILE.c} ${S}/thread/scheduler.c
++SRCS+=${S}/thread/scheduler.c
++OBJS+=scheduler.o
++
++thread.o: ${S}/thread/thread.c
++	${COMPILE.c} ${S}/thread/thread.c
++SRCS+=${S}/thread/thread.c
++OBJS+=thread.o
++
++main.o: ${S}/main/main.c
++	${COMPILE.c} ${S}/main/main.c
++SRCS+=${S}/main/main.c
++OBJS+=main.o
++
++menu.o: ${S}/main/menu.c
++	${COMPILE.c} ${S}/main/menu.c
++SRCS+=${S}/main/menu.c
++OBJS+=menu.o
++
++loadelf.o: ${S}/userprog/loadelf.c
++	${COMPILE.c} ${S}/userprog/loadelf.c
++SRCS+=${S}/userprog/loadelf.c
++OBJS+=loadelf.o
++
++runprogram.o: ${S}/userprog/runprogram.c
++	${COMPILE.c} ${S}/userprog/runprogram.c
++SRCS+=${S}/userprog/runprogram.c
++OBJS+=runprogram.o
++
++uio.o: ${S}/userprog/uio.c
++	${COMPILE.c} ${S}/userprog/uio.c
++SRCS+=${S}/userprog/uio.c
++OBJS+=uio.o
++
++arraytest.o: ${S}/test/arraytest.c
++	${COMPILE.c} ${S}/test/arraytest.c
++SRCS+=${S}/test/arraytest.c
++OBJS+=arraytest.o
++
++bitmaptest.o: ${S}/test/bitmaptest.c
++	${COMPILE.c} ${S}/test/bitmaptest.c
++SRCS+=${S}/test/bitmaptest.c
++OBJS+=bitmaptest.o
++
++queuetest.o: ${S}/test/queuetest.c
++	${COMPILE.c} ${S}/test/queuetest.c
++SRCS+=${S}/test/queuetest.c
++OBJS+=queuetest.o
++
++threadtest.o: ${S}/test/threadtest.c
++	${COMPILE.c} ${S}/test/threadtest.c
++SRCS+=${S}/test/threadtest.c
++OBJS+=threadtest.o
++
++tt3.o: ${S}/test/tt3.c
++	${COMPILE.c} ${S}/test/tt3.c
++SRCS+=${S}/test/tt3.c
++OBJS+=tt3.o
++
++synchtest.o: ${S}/test/synchtest.c
++	${COMPILE.c} ${S}/test/synchtest.c
++SRCS+=${S}/test/synchtest.c
++OBJS+=synchtest.o
++
++malloctest.o: ${S}/test/malloctest.c
++	${COMPILE.c} ${S}/test/malloctest.c
++SRCS+=${S}/test/malloctest.c
++OBJS+=malloctest.o
++
++fstest.o: ${S}/test/fstest.c
++	${COMPILE.c} ${S}/test/fstest.c
++SRCS+=${S}/test/fstest.c
++OBJS+=fstest.o
++
++autoconf.o: ${S}/compile/ASST1/autoconf.c
++	${COMPILE.c} ${S}/compile/ASST1/autoconf.c
++SRCS+=${S}/compile/ASST1/autoconf.c
++OBJS+=autoconf.o
++
+diff --git a/kern/compile/ASST1/fstest.o b/kern/compile/ASST1/fstest.o
+new file mode 100644
+index 0000000..885f74d
+Binary files /dev/null and b/kern/compile/ASST1/fstest.o differ
+diff --git a/kern/compile/ASST1/hardclock.o b/kern/compile/ASST1/hardclock.o
+new file mode 100644
+index 0000000..34e0bd2
+Binary files /dev/null and b/kern/compile/ASST1/hardclock.o differ
+diff --git a/kern/compile/ASST1/init.o b/kern/compile/ASST1/init.o
+new file mode 100644
+index 0000000..fffa90b
+Binary files /dev/null and b/kern/compile/ASST1/init.o differ
+diff --git a/kern/compile/ASST1/interrupt.o b/kern/compile/ASST1/interrupt.o
+new file mode 100644
+index 0000000..d49bdd6
+Binary files /dev/null and b/kern/compile/ASST1/interrupt.o differ
+diff --git a/kern/compile/ASST1/kernel b/kern/compile/ASST1/kernel
+new file mode 100755
+index 0000000..a8d92bf
+Binary files /dev/null and b/kern/compile/ASST1/kernel differ
+diff --git a/kern/compile/ASST1/kgets.o b/kern/compile/ASST1/kgets.o
+new file mode 100644
+index 0000000..074a920
+Binary files /dev/null and b/kern/compile/ASST1/kgets.o differ
+diff --git a/kern/compile/ASST1/kheap.o b/kern/compile/ASST1/kheap.o
+new file mode 100644
+index 0000000..af78823
+Binary files /dev/null and b/kern/compile/ASST1/kheap.o differ
+diff --git a/kern/compile/ASST1/kprintf.o b/kern/compile/ASST1/kprintf.o
+new file mode 100644
+index 0000000..4e65edc
+Binary files /dev/null and b/kern/compile/ASST1/kprintf.o differ
+diff --git a/kern/compile/ASST1/lamebus.o b/kern/compile/ASST1/lamebus.o
+new file mode 100644
+index 0000000..fa748ad
+Binary files /dev/null and b/kern/compile/ASST1/lamebus.o differ
+diff --git a/kern/compile/ASST1/lamebus_mips.o b/kern/compile/ASST1/lamebus_mips.o
+new file mode 100644
+index 0000000..e01c758
+Binary files /dev/null and b/kern/compile/ASST1/lamebus_mips.o differ
+diff --git a/kern/compile/ASST1/lhd.o b/kern/compile/ASST1/lhd.o
+new file mode 100644
+index 0000000..49a83a6
+Binary files /dev/null and b/kern/compile/ASST1/lhd.o differ
+diff --git a/kern/compile/ASST1/lhd_att.o b/kern/compile/ASST1/lhd_att.o
+new file mode 100644
+index 0000000..e031897
+Binary files /dev/null and b/kern/compile/ASST1/lhd_att.o differ
+diff --git a/kern/compile/ASST1/loadelf.o b/kern/compile/ASST1/loadelf.o
+new file mode 100644
+index 0000000..e5bf931
+Binary files /dev/null and b/kern/compile/ASST1/loadelf.o differ
+diff --git a/kern/compile/ASST1/lrandom.o b/kern/compile/ASST1/lrandom.o
+new file mode 100644
+index 0000000..461c3d0
+Binary files /dev/null and b/kern/compile/ASST1/lrandom.o differ
+diff --git a/kern/compile/ASST1/lrandom_att.o b/kern/compile/ASST1/lrandom_att.o
+new file mode 100644
+index 0000000..cd39b01
+Binary files /dev/null and b/kern/compile/ASST1/lrandom_att.o differ
+diff --git a/kern/compile/ASST1/lser.o b/kern/compile/ASST1/lser.o
+new file mode 100644
+index 0000000..bf99ac1
+Binary files /dev/null and b/kern/compile/ASST1/lser.o differ
+diff --git a/kern/compile/ASST1/lser_att.o b/kern/compile/ASST1/lser_att.o
+new file mode 100644
+index 0000000..514d1cb
+Binary files /dev/null and b/kern/compile/ASST1/lser_att.o differ
+diff --git a/kern/compile/ASST1/ltimer.o b/kern/compile/ASST1/ltimer.o
+new file mode 100644
+index 0000000..212cc84
+Binary files /dev/null and b/kern/compile/ASST1/ltimer.o differ
+diff --git a/kern/compile/ASST1/ltimer_att.o b/kern/compile/ASST1/ltimer_att.o
+new file mode 100644
+index 0000000..027e2cc
+Binary files /dev/null and b/kern/compile/ASST1/ltimer_att.o differ
+diff --git a/kern/compile/ASST1/ltrace.o b/kern/compile/ASST1/ltrace.o
+new file mode 100644
+index 0000000..a6713a5
+Binary files /dev/null and b/kern/compile/ASST1/ltrace.o differ
+diff --git a/kern/compile/ASST1/ltrace_att.o b/kern/compile/ASST1/ltrace_att.o
+new file mode 100644
+index 0000000..c7ebe4d
+Binary files /dev/null and b/kern/compile/ASST1/ltrace_att.o differ
+diff --git a/kern/compile/ASST1/machine b/kern/compile/ASST1/machine
+new file mode 120000
+index 0000000..c12f325
+--- /dev/null
++++ b/kern/compile/ASST1/machine
+@@ -0,0 +1 @@
++../../arch/mips/include
+\ No newline at end of file
+diff --git a/kern/compile/ASST1/main.o b/kern/compile/ASST1/main.o
+new file mode 100644
+index 0000000..dcb2f58
+Binary files /dev/null and b/kern/compile/ASST1/main.o differ
+diff --git a/kern/compile/ASST1/malloctest.o b/kern/compile/ASST1/malloctest.o
+new file mode 100644
+index 0000000..69d6c13
+Binary files /dev/null and b/kern/compile/ASST1/malloctest.o differ
+diff --git a/kern/compile/ASST1/memcpy.o b/kern/compile/ASST1/memcpy.o
+new file mode 100644
+index 0000000..7713850
+Binary files /dev/null and b/kern/compile/ASST1/memcpy.o differ
+diff --git a/kern/compile/ASST1/memmove.o b/kern/compile/ASST1/memmove.o
+new file mode 100644
+index 0000000..b8c174f
+Binary files /dev/null and b/kern/compile/ASST1/memmove.o differ
+diff --git a/kern/compile/ASST1/menu.o b/kern/compile/ASST1/menu.o
+new file mode 100644
+index 0000000..edb5224
+Binary files /dev/null and b/kern/compile/ASST1/menu.o differ
+diff --git a/kern/compile/ASST1/mips-setjmp.o b/kern/compile/ASST1/mips-setjmp.o
+new file mode 100644
+index 0000000..e37ae2d
+Binary files /dev/null and b/kern/compile/ASST1/mips-setjmp.o differ
+diff --git a/kern/compile/ASST1/misc.o b/kern/compile/ASST1/misc.o
+new file mode 100644
+index 0000000..443d1df
+Binary files /dev/null and b/kern/compile/ASST1/misc.o differ
+diff --git a/kern/compile/ASST1/ntoh.o b/kern/compile/ASST1/ntoh.o
+new file mode 100644
+index 0000000..2a11c53
+Binary files /dev/null and b/kern/compile/ASST1/ntoh.o differ
+diff --git a/kern/compile/ASST1/opt-dumbvm.h b/kern/compile/ASST1/opt-dumbvm.h
+new file mode 100644
+index 0000000..7db9b01
+--- /dev/null
++++ b/kern/compile/ASST1/opt-dumbvm.h
+@@ -0,0 +1,5 @@
++/* Automatically generated; do not edit */
++#ifndef _OPT_DUMBVM_H_
++#define _OPT_DUMBVM_H_
++#define OPT_DUMBVM 1
++#endif /* _OPT_DUMBVM_H_ */
+diff --git a/kern/compile/ASST1/opt-net.h b/kern/compile/ASST1/opt-net.h
+new file mode 100644
+index 0000000..0340a83
+--- /dev/null
++++ b/kern/compile/ASST1/opt-net.h
+@@ -0,0 +1,5 @@
++/* Automatically generated; do not edit */
++#ifndef _OPT_NET_H_
++#define _OPT_NET_H_
++#define OPT_NET 0
++#endif /* _OPT_NET_H_ */
+diff --git a/kern/compile/ASST1/opt-netfs.h b/kern/compile/ASST1/opt-netfs.h
+new file mode 100644
+index 0000000..cd21c56
+--- /dev/null
++++ b/kern/compile/ASST1/opt-netfs.h
+@@ -0,0 +1,5 @@
++/* Automatically generated; do not edit */
++#ifndef _OPT_NETFS_H_
++#define _OPT_NETFS_H_
++#define OPT_NETFS 0
++#endif /* _OPT_NETFS_H_ */
+diff --git a/kern/compile/ASST1/opt-sfs.h b/kern/compile/ASST1/opt-sfs.h
+new file mode 100644
+index 0000000..94095ad
+--- /dev/null
++++ b/kern/compile/ASST1/opt-sfs.h
+@@ -0,0 +1,5 @@
++/* Automatically generated; do not edit */
++#ifndef _OPT_SFS_H_
++#define _OPT_SFS_H_
++#define OPT_SFS 1
++#endif /* _OPT_SFS_H_ */
+diff --git a/kern/compile/ASST1/opt-synchprobs.h b/kern/compile/ASST1/opt-synchprobs.h
+new file mode 100644
+index 0000000..57b9186
+--- /dev/null
++++ b/kern/compile/ASST1/opt-synchprobs.h
+@@ -0,0 +1,5 @@
++/* Automatically generated; do not edit */
++#ifndef _OPT_SYNCHPROBS_H_
++#define _OPT_SYNCHPROBS_H_
++#define OPT_SYNCHPROBS 1
++#endif /* _OPT_SYNCHPROBS_H_ */
+diff --git a/kern/compile/ASST1/pcb.o b/kern/compile/ASST1/pcb.o
+new file mode 100644
+index 0000000..ed30af4
+Binary files /dev/null and b/kern/compile/ASST1/pcb.o differ
+diff --git a/kern/compile/ASST1/pseudorand.o b/kern/compile/ASST1/pseudorand.o
+new file mode 100644
+index 0000000..bcf19bd
+Binary files /dev/null and b/kern/compile/ASST1/pseudorand.o differ
+diff --git a/kern/compile/ASST1/pseudorand_att.o b/kern/compile/ASST1/pseudorand_att.o
+new file mode 100644
+index 0000000..640ba73
+Binary files /dev/null and b/kern/compile/ASST1/pseudorand_att.o differ
+diff --git a/kern/compile/ASST1/queue.o b/kern/compile/ASST1/queue.o
+new file mode 100644
+index 0000000..48234c4
+Binary files /dev/null and b/kern/compile/ASST1/queue.o differ
+diff --git a/kern/compile/ASST1/queuetest.o b/kern/compile/ASST1/queuetest.o
+new file mode 100644
+index 0000000..cb2ab00
+Binary files /dev/null and b/kern/compile/ASST1/queuetest.o differ
+diff --git a/kern/compile/ASST1/ram.o b/kern/compile/ASST1/ram.o
+new file mode 100644
+index 0000000..75be371
+Binary files /dev/null and b/kern/compile/ASST1/ram.o differ
+diff --git a/kern/compile/ASST1/random.o b/kern/compile/ASST1/random.o
+new file mode 100644
+index 0000000..1102cc7
+Binary files /dev/null and b/kern/compile/ASST1/random.o differ
+diff --git a/kern/compile/ASST1/random_lrandom.o b/kern/compile/ASST1/random_lrandom.o
+new file mode 100644
+index 0000000..18ce9e7
+Binary files /dev/null and b/kern/compile/ASST1/random_lrandom.o differ
+diff --git a/kern/compile/ASST1/rtclock.o b/kern/compile/ASST1/rtclock.o
+new file mode 100644
+index 0000000..1e4f023
+Binary files /dev/null and b/kern/compile/ASST1/rtclock.o differ
+diff --git a/kern/compile/ASST1/rtclock_ltimer.o b/kern/compile/ASST1/rtclock_ltimer.o
+new file mode 100644
+index 0000000..e20fef3
+Binary files /dev/null and b/kern/compile/ASST1/rtclock_ltimer.o differ
+diff --git a/kern/compile/ASST1/runprogram.o b/kern/compile/ASST1/runprogram.o
+new file mode 100644
+index 0000000..9edbe1b
+Binary files /dev/null and b/kern/compile/ASST1/runprogram.o differ
+diff --git a/kern/compile/ASST1/scheduler.o b/kern/compile/ASST1/scheduler.o
+new file mode 100644
+index 0000000..9960fa4
+Binary files /dev/null and b/kern/compile/ASST1/scheduler.o differ
+diff --git a/kern/compile/ASST1/sfs_fs.o b/kern/compile/ASST1/sfs_fs.o
+new file mode 100644
+index 0000000..21b3b9e
+Binary files /dev/null and b/kern/compile/ASST1/sfs_fs.o differ
+diff --git a/kern/compile/ASST1/sfs_io.o b/kern/compile/ASST1/sfs_io.o
+new file mode 100644
+index 0000000..430c1ce
+Binary files /dev/null and b/kern/compile/ASST1/sfs_io.o differ
+diff --git a/kern/compile/ASST1/sfs_vnode.o b/kern/compile/ASST1/sfs_vnode.o
+new file mode 100644
+index 0000000..0e87e45
+Binary files /dev/null and b/kern/compile/ASST1/sfs_vnode.o differ
+diff --git a/kern/compile/ASST1/snprintf.o b/kern/compile/ASST1/snprintf.o
+new file mode 100644
+index 0000000..448796a
+Binary files /dev/null and b/kern/compile/ASST1/snprintf.o differ
+diff --git a/kern/compile/ASST1/spl.o b/kern/compile/ASST1/spl.o
+new file mode 100644
+index 0000000..dfacfd5
+Binary files /dev/null and b/kern/compile/ASST1/spl.o differ
+diff --git a/kern/compile/ASST1/start.o b/kern/compile/ASST1/start.o
+new file mode 100644
+index 0000000..642bb2b
+Binary files /dev/null and b/kern/compile/ASST1/start.o differ
+diff --git a/kern/compile/ASST1/stoplight.o b/kern/compile/ASST1/stoplight.o
+new file mode 100644
+index 0000000..5ebe490
+Binary files /dev/null and b/kern/compile/ASST1/stoplight.o differ
+diff --git a/kern/compile/ASST1/strcat.o b/kern/compile/ASST1/strcat.o
+new file mode 100644
+index 0000000..a347ed4
+Binary files /dev/null and b/kern/compile/ASST1/strcat.o differ
+diff --git a/kern/compile/ASST1/strchr.o b/kern/compile/ASST1/strchr.o
+new file mode 100644
+index 0000000..9523ab0
+Binary files /dev/null and b/kern/compile/ASST1/strchr.o differ
+diff --git a/kern/compile/ASST1/strcmp.o b/kern/compile/ASST1/strcmp.o
+new file mode 100644
+index 0000000..ae6229a
+Binary files /dev/null and b/kern/compile/ASST1/strcmp.o differ
+diff --git a/kern/compile/ASST1/strcpy.o b/kern/compile/ASST1/strcpy.o
+new file mode 100644
+index 0000000..5d90256
+Binary files /dev/null and b/kern/compile/ASST1/strcpy.o differ
+diff --git a/kern/compile/ASST1/strlen.o b/kern/compile/ASST1/strlen.o
+new file mode 100644
+index 0000000..aa688d5
+Binary files /dev/null and b/kern/compile/ASST1/strlen.o differ
+diff --git a/kern/compile/ASST1/strrchr.o b/kern/compile/ASST1/strrchr.o
+new file mode 100644
+index 0000000..d46a4dd
+Binary files /dev/null and b/kern/compile/ASST1/strrchr.o differ
+diff --git a/kern/compile/ASST1/strtok_r.o b/kern/compile/ASST1/strtok_r.o
+new file mode 100644
+index 0000000..931b206
+Binary files /dev/null and b/kern/compile/ASST1/strtok_r.o differ
+diff --git a/kern/compile/ASST1/switch.o b/kern/compile/ASST1/switch.o
+new file mode 100644
+index 0000000..cd79d46
+Binary files /dev/null and b/kern/compile/ASST1/switch.o differ
+diff --git a/kern/compile/ASST1/synch.o b/kern/compile/ASST1/synch.o
+new file mode 100644
+index 0000000..c51ba6a
+Binary files /dev/null and b/kern/compile/ASST1/synch.o differ
+diff --git a/kern/compile/ASST1/synchtest.o b/kern/compile/ASST1/synchtest.o
+new file mode 100644
+index 0000000..25343ff
+Binary files /dev/null and b/kern/compile/ASST1/synchtest.o differ
+diff --git a/kern/compile/ASST1/syscall.o b/kern/compile/ASST1/syscall.o
+new file mode 100644
+index 0000000..c101241
+Binary files /dev/null and b/kern/compile/ASST1/syscall.o differ
+diff --git a/kern/compile/ASST1/thread.o b/kern/compile/ASST1/thread.o
+new file mode 100644
+index 0000000..368ac95
+Binary files /dev/null and b/kern/compile/ASST1/thread.o differ
+diff --git a/kern/compile/ASST1/threadstart.o b/kern/compile/ASST1/threadstart.o
+new file mode 100644
+index 0000000..7e759d4
+Binary files /dev/null and b/kern/compile/ASST1/threadstart.o differ
+diff --git a/kern/compile/ASST1/threadtest.o b/kern/compile/ASST1/threadtest.o
+new file mode 100644
+index 0000000..26bdd07
+Binary files /dev/null and b/kern/compile/ASST1/threadtest.o differ
+diff --git a/kern/compile/ASST1/tlb_mips1.o b/kern/compile/ASST1/tlb_mips1.o
+new file mode 100644
+index 0000000..1e630c1
+Binary files /dev/null and b/kern/compile/ASST1/tlb_mips1.o differ
+diff --git a/kern/compile/ASST1/trap.o b/kern/compile/ASST1/trap.o
+new file mode 100644
+index 0000000..09daa91
+Binary files /dev/null and b/kern/compile/ASST1/trap.o differ
+diff --git a/kern/compile/ASST1/tt3.o b/kern/compile/ASST1/tt3.o
+new file mode 100644
+index 0000000..18fb6df
+Binary files /dev/null and b/kern/compile/ASST1/tt3.o differ
+diff --git a/kern/compile/ASST1/uio.o b/kern/compile/ASST1/uio.o
+new file mode 100644
+index 0000000..80d772f
+Binary files /dev/null and b/kern/compile/ASST1/uio.o differ
+diff --git a/kern/compile/ASST1/vers.c b/kern/compile/ASST1/vers.c
+new file mode 100644
+index 0000000..202a50b
+--- /dev/null
++++ b/kern/compile/ASST1/vers.c
+@@ -0,0 +1,3 @@
++/* This file is automatically generated. Edits will be lost.*/
++const int buildversion = 10;
++const char buildconfig[] = "ASST1";
+diff --git a/kern/compile/ASST1/vers.o b/kern/compile/ASST1/vers.o
+new file mode 100644
+index 0000000..9ff64b3
+Binary files /dev/null and b/kern/compile/ASST1/vers.o differ
+diff --git a/kern/compile/ASST1/version b/kern/compile/ASST1/version
+new file mode 100644
+index 0000000..f599e28
+--- /dev/null
++++ b/kern/compile/ASST1/version
+@@ -0,0 +1 @@
++10
+diff --git a/kern/compile/ASST1/vfscwd.o b/kern/compile/ASST1/vfscwd.o
+new file mode 100644
+index 0000000..1e90f6f
+Binary files /dev/null and b/kern/compile/ASST1/vfscwd.o differ
+diff --git a/kern/compile/ASST1/vfslist.o b/kern/compile/ASST1/vfslist.o
+new file mode 100644
+index 0000000..b20d321
+Binary files /dev/null and b/kern/compile/ASST1/vfslist.o differ
+diff --git a/kern/compile/ASST1/vfslookup.o b/kern/compile/ASST1/vfslookup.o
+new file mode 100644
+index 0000000..ee61404
+Binary files /dev/null and b/kern/compile/ASST1/vfslookup.o differ
+diff --git a/kern/compile/ASST1/vfspath.o b/kern/compile/ASST1/vfspath.o
+new file mode 100644
+index 0000000..c4c3574
+Binary files /dev/null and b/kern/compile/ASST1/vfspath.o differ
+diff --git a/kern/compile/ASST1/vnode.o b/kern/compile/ASST1/vnode.o
+new file mode 100644
+index 0000000..6011da8
+Binary files /dev/null and b/kern/compile/ASST1/vnode.o differ
+diff --git a/kern/include/synch.h b/kern/include/synch.h
+index 3583e78..feddea8 100644
+--- a/kern/include/synch.h
++++ b/kern/include/synch.h
+@@ -52,6 +52,7 @@ struct lock {
+ 	char *name;
+ 	// add what you need here
+ 	// (don't forget to mark things volatile as needed)
++	struct thread *volatile holder;
+ };
+ 
+ struct lock *lock_create(const char *name);
+diff --git a/kern/include/thread.h b/kern/include/thread.h
+index b051467..cce2610 100644
+--- a/kern/include/thread.h
++++ b/kern/include/thread.h
+@@ -96,6 +96,8 @@ void thread_wakeup(const void *addr);
+  */
+ int thread_hassleepers(const void *addr);
+ 
++/*Wake up a thread with given address*/
++void thread_wakeone(const void *addr);
+ 
+ /*
+  * Private thread functions.
+diff --git a/kern/thread/synch.c b/kern/thread/synch.c
+index cdc47a3..280cb19 100644
+--- a/kern/thread/synch.c
++++ b/kern/thread/synch.c
+@@ -112,7 +112,8 @@ lock_create(const char *name)
+ 		return NULL;
+ 	}
+ 	
+-	// add stuff here as needed
++	//add stuff here as needed
++	lock->holder = NULL;
+ 	
+ 	return lock;
+ }
+@@ -131,27 +132,53 @@ lock_destroy(struct lock *lock)
+ void
+ lock_acquire(struct lock *lock)
+ {
+-	// Write this
++	int spl;
++	assert(lock != NULL);
++	spl = splhigh(); /*see P(*sem) in next slide*/
++	if (lock_do_i_hold(lock)) { /*check deadlock*/
++		panic("lock %s at %p: Deadlock. \n", lock->name, lock);
++	}
++	/* wait the lock to become free*/
++	while (lock->holder != NULL) {
++		thread_sleep(lock); /*see P(*sem) in next slide*/
++	}
++	/*this thread is holding the lock */
++	lock->holder = curthread;
++	splx(spl);
+ 
+-	(void)lock;  // suppress warning until code gets written
+ }
+ 
+ void
+ lock_release(struct lock *lock)
+-{
+-	// Write this
++{	
++	int spl;
++	assert(lock != NULL);
++        spl = splhigh(); /*turn off interupts*/
+ 
+-	(void)lock;  // suppress warning until code gets written
++	/*Release the lock*/
++	lock->holder = NULL;
++
++	/*wakeup threads waiting for lock*/
++	thread_wakeup(lock);
++
++	splx(spl);
+ }
+ 
+ int
+ lock_do_i_hold(struct lock *lock)
+ {
+-	// Write this
+-
+-	(void)lock;  // suppress warning until code gets written
+-
+-	return 1;    // dummy until code gets written
++	int spl, same;
++	assert(lock != NULL); /*assert statement for lock*/
++	spl = splhigh(); /*turn off interrupt*/
++
++	if (lock->holder == curthread) {
++		same = 1;
++	} else {
++		same = 0;
++	}
++	splx(spl);
++	
++	return same; /*needs a return statement as it is not void*/
+ }
+ 
+ ////////////////////////////////////////////////////////////
+@@ -194,23 +221,51 @@ cv_destroy(struct cv *cv)
+ void
+ cv_wait(struct cv *cv, struct lock *lock)
+ {
+-	// Write this
+-	(void)cv;    // suppress warning until code gets written
+-	(void)lock;  // suppress warning until code gets written
++	/*use assert to check input cv and lock*/
++	assert(cv != NULL);
++	assert(lock != NULL);
++
++	int spl = splhigh(); /*turn off interrupt*/
++	
++	lock_release(lock); /*release the lock*/
++
++	thread_sleep(cv); /*sleep thread until signal cv*/
++
++	lock_acquire(lock); /*acquire lock*/
++
++	splx(spl); /*return to previous interrupt state*/
+ }
+ 
+ void
+ cv_signal(struct cv *cv, struct lock *lock)
+ {
+-	// Write this
+-	(void)cv;    // suppress warning until code gets written
+-	(void)lock;  // suppress warning until code gets written
++	/*use assert to check input cv and lock*/
++	assert(cv != NULL);
++	assert(lock != NULL);
++
++	int spl = splhigh(); /*turn off interrupt*/
++	
++	
++	if (!lock_do_i_hold(lock)) {
++		panic("cv_signal error: cv %s at %p, lock %s at	%p.\n", cv->name, cv, lock->name, lock);
++	}
++	
++	/*wakeup a thread*/
++	thread_wakeup(cv);
++
++	splx(spl); /*return to previous interrupt state*/
+ }
+ 
+ void
+ cv_broadcast(struct cv *cv, struct lock *lock)
+ {
+-	// Write this
+-	(void)cv;    // suppress warning until code gets written
+-	(void)lock;  // suppress warning until code gets written
++	/*use assert to check input cv and lock*/
++	assert(cv != NULL);
++	assert(lock != NULL);
++
++	int spl = splhigh(); /*turn off interrupt*/
++
++	lock_release(lock); /*release lock*/
++	thread_wakeup(cv); /*wakeup thread*/
++	splx(spl); /*return to previous interupt state*/
+ }
+diff --git a/kern/thread/thread.c b/kern/thread/thread.c
+index d08f473..7934de2 100644
+--- a/kern/thread/thread.c
++++ b/kern/thread/thread.c
+@@ -537,6 +537,41 @@ thread_wakeup(const void *addr)
+ 	}
+ }
+ 
++/*Implementation of thread_wakeone added to thread.h.
++ *Wake up a single thread that is sleeping on a specified address (e.g., the addresses of semaphores, locks, or CVs).
++ */
++void thread_wakeone(const void *addr) {
++	/*This code was copy and pasted from thread_wakeup, with a minor change to ensure only one thread is woken*/
++	int i, result;
++
++        // meant to be called with interrupts off
++        assert(curspl>0);
++
++        // This is inefficient. Feel free to improve it.
++
++        for (i=0; i<array_getnum(sleepers); i++) {
++                struct thread *t = array_getguy(sleepers, i);
++                if (t->t_sleepaddr == addr) {
++
++                        // Remove from list
++                        array_remove(sleepers, i);
++
++                        // must look at the same sleepers[i] again
++                        i--;
++
++                        /*
++                         * Because we preallocate during thread_fork,
++                         * this should never fail.
++                         */
++                        result = make_runnable(t);
++                        assert(result==0);
++
++			/*change is below*/
++			break; /*This breaks the loop which makes only one thread woken*/
++                }
++        }
++}
++
+ /*
+  * Return nonzero if there are any threads who are sleeping on "sleep address"
+  * ADDR. This is meant to be used only for diagnostic purposes.
+diff --git a/lib/crt0/crt0.o b/lib/crt0/crt0.o
+new file mode 100644
+index 0000000..d72ddb9
+Binary files /dev/null and b/lib/crt0/crt0.o differ
+diff --git a/lib/hostcompat/dependh.mk b/lib/hostcompat/dependh.mk
+index 58d01a5..cc3b67e 100644
+--- a/lib/hostcompat/dependh.mk
++++ b/lib/hostcompat/dependh.mk
+@@ -8,3 +8,4 @@ time.ho: \
+ hostcompat.ho: \
+  hostcompat.c \
+  hostcompat.h
++
+diff --git a/lib/hostcompat/err.ho b/lib/hostcompat/err.ho
+new file mode 100644
+index 0000000..0ea4230
+Binary files /dev/null and b/lib/hostcompat/err.ho differ
+diff --git a/lib/hostcompat/hostcompat.ho b/lib/hostcompat/hostcompat.ho
+new file mode 100644
+index 0000000..3110f91
+Binary files /dev/null and b/lib/hostcompat/hostcompat.ho differ
+diff --git a/lib/hostcompat/libhostcompat.ha b/lib/hostcompat/libhostcompat.ha
+new file mode 100644
+index 0000000..ec77113
+Binary files /dev/null and b/lib/hostcompat/libhostcompat.ha differ
+diff --git a/lib/hostcompat/time.ho b/lib/hostcompat/time.ho
+new file mode 100644
+index 0000000..bbc5d7d
+Binary files /dev/null and b/lib/hostcompat/time.ho differ
+diff --git a/lib/libc/__assert.o b/lib/libc/__assert.o
+new file mode 100644
+index 0000000..134b443
+Binary files /dev/null and b/lib/libc/__assert.o differ
+diff --git a/lib/libc/__printf.o b/lib/libc/__printf.o
+new file mode 100644
+index 0000000..d8948b5
+Binary files /dev/null and b/lib/libc/__printf.o differ
+diff --git a/lib/libc/__puts.o b/lib/libc/__puts.o
+new file mode 100644
+index 0000000..ed2767e
+Binary files /dev/null and b/lib/libc/__puts.o differ
+diff --git a/lib/libc/abort.o b/lib/libc/abort.o
+new file mode 100644
+index 0000000..a1d2598
+Binary files /dev/null and b/lib/libc/abort.o differ
+diff --git a/lib/libc/atoi.o b/lib/libc/atoi.o
+new file mode 100644
+index 0000000..ea4298d
+Binary files /dev/null and b/lib/libc/atoi.o differ
+diff --git a/lib/libc/bzero.o b/lib/libc/bzero.o
+new file mode 100644
+index 0000000..68faa79
+Binary files /dev/null and b/lib/libc/bzero.o differ
+diff --git a/lib/libc/depend.mk b/lib/libc/depend.mk
+index e8aad83..c073747 100644
+--- a/lib/libc/depend.mk
++++ b/lib/libc/depend.mk
+@@ -244,3 +244,4 @@ syscalls.o: \
+  syscalls.S \
+  $(OSTREE)/include/kern/callno.h \
+  $(OSTREE)/include/machine/asmdefs.h
++
+diff --git a/lib/libc/err.o b/lib/libc/err.o
+new file mode 100644
+index 0000000..bb03665
+Binary files /dev/null and b/lib/libc/err.o differ
+diff --git a/lib/libc/errno.o b/lib/libc/errno.o
+new file mode 100644
+index 0000000..374c338
+Binary files /dev/null and b/lib/libc/errno.o differ
+diff --git a/lib/libc/exit.o b/lib/libc/exit.o
+new file mode 100644
+index 0000000..74910c9
+Binary files /dev/null and b/lib/libc/exit.o differ
+diff --git a/lib/libc/getchar.o b/lib/libc/getchar.o
+new file mode 100644
+index 0000000..9030a04
+Binary files /dev/null and b/lib/libc/getchar.o differ
+diff --git a/lib/libc/getcwd.o b/lib/libc/getcwd.o
+new file mode 100644
+index 0000000..3c4d6dc
+Binary files /dev/null and b/lib/libc/getcwd.o differ
+diff --git a/lib/libc/libc.a b/lib/libc/libc.a
+new file mode 100644
+index 0000000..ca014ca
+Binary files /dev/null and b/lib/libc/libc.a differ
+diff --git a/lib/libc/memcmp.o b/lib/libc/memcmp.o
+new file mode 100644
+index 0000000..d1587d8
+Binary files /dev/null and b/lib/libc/memcmp.o differ
+diff --git a/lib/libc/memcpy.o b/lib/libc/memcpy.o
+new file mode 100644
+index 0000000..05cf4f1
+Binary files /dev/null and b/lib/libc/memcpy.o differ
+diff --git a/lib/libc/memmove.o b/lib/libc/memmove.o
+new file mode 100644
+index 0000000..f02dfbe
+Binary files /dev/null and b/lib/libc/memmove.o differ
+diff --git a/lib/libc/memset.o b/lib/libc/memset.o
+new file mode 100644
+index 0000000..f8e60be
+Binary files /dev/null and b/lib/libc/memset.o differ
+diff --git a/lib/libc/mips-setjmp.o b/lib/libc/mips-setjmp.o
+new file mode 100644
+index 0000000..da725b4
+Binary files /dev/null and b/lib/libc/mips-setjmp.o differ
+diff --git a/lib/libc/printf.o b/lib/libc/printf.o
+new file mode 100644
+index 0000000..85e4de4
+Binary files /dev/null and b/lib/libc/printf.o differ
+diff --git a/lib/libc/putchar.o b/lib/libc/putchar.o
+new file mode 100644
+index 0000000..c3d7ea0
+Binary files /dev/null and b/lib/libc/putchar.o differ
+diff --git a/lib/libc/puts.o b/lib/libc/puts.o
+new file mode 100644
+index 0000000..c963fcf
+Binary files /dev/null and b/lib/libc/puts.o differ
+diff --git a/lib/libc/random.o b/lib/libc/random.o
+new file mode 100644
+index 0000000..844c752
+Binary files /dev/null and b/lib/libc/random.o differ
+diff --git a/lib/libc/snprintf.o b/lib/libc/snprintf.o
+new file mode 100644
+index 0000000..30277e9
+Binary files /dev/null and b/lib/libc/snprintf.o differ
+diff --git a/lib/libc/strcat.o b/lib/libc/strcat.o
+new file mode 100644
+index 0000000..23a5edc
+Binary files /dev/null and b/lib/libc/strcat.o differ
+diff --git a/lib/libc/strchr.o b/lib/libc/strchr.o
+new file mode 100644
+index 0000000..f89dcba
+Binary files /dev/null and b/lib/libc/strchr.o differ
+diff --git a/lib/libc/strcmp.o b/lib/libc/strcmp.o
+new file mode 100644
+index 0000000..e637441
+Binary files /dev/null and b/lib/libc/strcmp.o differ
+diff --git a/lib/libc/strcpy.o b/lib/libc/strcpy.o
+new file mode 100644
+index 0000000..cd12af3
+Binary files /dev/null and b/lib/libc/strcpy.o differ
+diff --git a/lib/libc/strerror.o b/lib/libc/strerror.o
+new file mode 100644
+index 0000000..1fca101
+Binary files /dev/null and b/lib/libc/strerror.o differ
+diff --git a/lib/libc/strlen.o b/lib/libc/strlen.o
+new file mode 100644
+index 0000000..0a9b696
+Binary files /dev/null and b/lib/libc/strlen.o differ
+diff --git a/lib/libc/strrchr.o b/lib/libc/strrchr.o
+new file mode 100644
+index 0000000..86b66c7
+Binary files /dev/null and b/lib/libc/strrchr.o differ
+diff --git a/lib/libc/strtok.o b/lib/libc/strtok.o
+new file mode 100644
+index 0000000..f8299db
+Binary files /dev/null and b/lib/libc/strtok.o differ
+diff --git a/lib/libc/strtok_r.o b/lib/libc/strtok_r.o
+new file mode 100644
+index 0000000..d04733a
+Binary files /dev/null and b/lib/libc/strtok_r.o differ
+diff --git a/lib/libc/syscalls.S b/lib/libc/syscalls.S
+new file mode 100644
+index 0000000..5d516f3
+--- /dev/null
++++ b/lib/libc/syscalls.S
+@@ -0,0 +1,99 @@
++/* Automatically generated from syscalls-mips.S */
++/*
++ * This file is copied to syscalls.S, and then the actual syscalls are
++ * appended as lines of the form
++ *    SYSCALL(symbol, number)
++ *
++ * Warning: gccs before 3.0 run cpp in -traditional mode on .S files.
++ * So if you use an older gcc you'll need to change the token pasting
++ * in SYSCALL().
++ */
++
++#include <kern/callno.h>
++#include <machine/asmdefs.h>
++
++/*
++ * Definition for each syscall.
++ * All we do is load the syscall number into v0, the register the
++ * kernel expects to find it in, and jump to the shared syscall code.
++ * (Note that the addiu instruction is in the jump's delay slot.)
++ */    
++#define SYSCALL(sym, num) \
++   .set noreorder		; \
++   .globl sym			; \
++   .type sym,@function		; \
++   .ent sym			; \
++sym:				; \
++   j __syscall                  ; \
++   addiu v0, $0, SYS_##sym	; \
++   .end sym			; \
++   .set reorder
++
++/*
++ * Now, the shared system call code.
++ * The MIPS syscall ABI is as follows:	
++ *
++ *    On entry, call number in v0. The rest is like a normal function
++ *    call: four args in a0-a3, the other args on the stack.
++ *
++ *    On successful return, zero in a3 register; return value in v0
++ *    (v0 and v1 for a 64-bit return value).
++ *
++ *    On error return, nonzero in a3 register; errno value in v0.
++ *
++ * The use of a3 as a return register to hold the success flag is
++ * gross, but I didn't make it up.
++ *
++ * Note that by longstanding Unix convention and POSIX decree, errno
++ * is not to be set unless the call actually fails.
++ */
++
++   .set noreorder
++   .text
++   .type __syscall,@function
++   .ent __syscall
++__syscall:
++   syscall              /* make system call */
++   beq a3, $0, 1f       /* if a3 is zero, call succeeded */
++   nop			/* delay slot */
++   sw v0, errno        /* call failed: store errno */
++   li v1, -1		/* and force return value to -1 */
++   li v0, -1
++1:
++   j ra			/* return */
++   nop			/* delay slot */
++   .end __syscall
++   .set reorder
++
++SYSCALL(_exit, 0)
++SYSCALL(execv, 1)
++SYSCALL(fork, 2)
++SYSCALL(waitpid, 3)
++SYSCALL(open, 4)
++SYSCALL(read, 5)
++SYSCALL(write, 6)
++SYSCALL(close, 7)
++SYSCALL(reboot, 8)
++SYSCALL(sync, 9)
++SYSCALL(sbrk, 10)
++SYSCALL(getpid, 11)
++SYSCALL(ioctl, 12)
++SYSCALL(lseek, 13)
++SYSCALL(fsync, 14)
++SYSCALL(ftruncate, 15)
++SYSCALL(fstat, 16)
++SYSCALL(remove, 17)
++SYSCALL(rename, 18)
++SYSCALL(link, 19)
++SYSCALL(mkdir, 20)
++SYSCALL(rmdir, 21)
++SYSCALL(chdir, 22)
++SYSCALL(getdirentry, 23)
++SYSCALL(symlink, 24)
++SYSCALL(readlink, 25)
++SYSCALL(dup2, 26)
++SYSCALL(pipe, 27)
++SYSCALL(__time, 28)
++SYSCALL(__getcwd, 29)
++SYSCALL(stat, 30)
++SYSCALL(lstat, 31)
+diff --git a/lib/libc/syscalls.o b/lib/libc/syscalls.o
+new file mode 100644
+index 0000000..cc40b36
+Binary files /dev/null and b/lib/libc/syscalls.o differ
+diff --git a/lib/libc/system.o b/lib/libc/system.o
+new file mode 100644
+index 0000000..bd60081
+Binary files /dev/null and b/lib/libc/system.o differ
+diff --git a/lib/libc/time.o b/lib/libc/time.o
+new file mode 100644
+index 0000000..af4218e
+Binary files /dev/null and b/lib/libc/time.o differ
+diff --git a/sbin/dumpsfs/depend.mk b/sbin/dumpsfs/depend.mk
+index 6f2f559..639ebd8 100644
+--- a/sbin/dumpsfs/depend.mk
++++ b/sbin/dumpsfs/depend.mk
+@@ -35,3 +35,4 @@ disk.o: \
+  disk.h
+ support.o: \
+  support.c
++
+diff --git a/sbin/dumpsfs/dependh.mk b/sbin/dumpsfs/dependh.mk
+index a23239e..7e39e2d 100644
+--- a/sbin/dumpsfs/dependh.mk
++++ b/sbin/dumpsfs/dependh.mk
+@@ -11,3 +11,4 @@ disk.ho: \
+  disk.h
+ support.ho: \
+  support.c
++
+diff --git a/sbin/dumpsfs/disk.c b/sbin/dumpsfs/disk.c
+new file mode 120000
+index 0000000..1d12049
+--- /dev/null
++++ b/sbin/dumpsfs/disk.c
+@@ -0,0 +1 @@
++../mksfs/disk.c
+\ No newline at end of file
+diff --git a/sbin/dumpsfs/disk.h b/sbin/dumpsfs/disk.h
+new file mode 120000
+index 0000000..a5b5768
+--- /dev/null
++++ b/sbin/dumpsfs/disk.h
+@@ -0,0 +1 @@
++../mksfs/disk.h
+\ No newline at end of file
+diff --git a/sbin/dumpsfs/disk.ho b/sbin/dumpsfs/disk.ho
+new file mode 100644
+index 0000000..d139b60
+Binary files /dev/null and b/sbin/dumpsfs/disk.ho differ
+diff --git a/sbin/dumpsfs/disk.o b/sbin/dumpsfs/disk.o
+new file mode 100644
+index 0000000..eafd17a
+Binary files /dev/null and b/sbin/dumpsfs/disk.o differ
+diff --git a/sbin/dumpsfs/dumpsfs b/sbin/dumpsfs/dumpsfs
+new file mode 100755
+index 0000000..e45e145
+Binary files /dev/null and b/sbin/dumpsfs/dumpsfs differ
+diff --git a/sbin/dumpsfs/dumpsfs.ho b/sbin/dumpsfs/dumpsfs.ho
+new file mode 100644
+index 0000000..7a65702
+Binary files /dev/null and b/sbin/dumpsfs/dumpsfs.ho differ
+diff --git a/sbin/dumpsfs/dumpsfs.o b/sbin/dumpsfs/dumpsfs.o
+new file mode 100644
+index 0000000..4ac6099
+Binary files /dev/null and b/sbin/dumpsfs/dumpsfs.o differ
+diff --git a/sbin/dumpsfs/host-dumpsfs b/sbin/dumpsfs/host-dumpsfs
+new file mode 100755
+index 0000000..73e4d8a
+Binary files /dev/null and b/sbin/dumpsfs/host-dumpsfs differ
+diff --git a/sbin/dumpsfs/support.c b/sbin/dumpsfs/support.c
+new file mode 120000
+index 0000000..13cf737
+--- /dev/null
++++ b/sbin/dumpsfs/support.c
+@@ -0,0 +1 @@
++../mksfs/support.c
+\ No newline at end of file
+diff --git a/sbin/dumpsfs/support.h b/sbin/dumpsfs/support.h
+new file mode 120000
+index 0000000..b03d92e
+--- /dev/null
++++ b/sbin/dumpsfs/support.h
+@@ -0,0 +1 @@
++../mksfs/support.h
+\ No newline at end of file
+diff --git a/sbin/dumpsfs/support.ho b/sbin/dumpsfs/support.ho
+new file mode 100644
+index 0000000..d3ad111
+Binary files /dev/null and b/sbin/dumpsfs/support.ho differ
+diff --git a/sbin/dumpsfs/support.o b/sbin/dumpsfs/support.o
+new file mode 100644
+index 0000000..2e02b08
+Binary files /dev/null and b/sbin/dumpsfs/support.o differ
+diff --git a/sbin/halt/depend.mk b/sbin/halt/depend.mk
+index 451ea93..d14efee 100644
+--- a/sbin/halt/depend.mk
++++ b/sbin/halt/depend.mk
+@@ -7,3 +7,4 @@ halt.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h
++
+diff --git a/sbin/halt/halt b/sbin/halt/halt
+new file mode 100755
+index 0000000..e5ed6ec
+Binary files /dev/null and b/sbin/halt/halt differ
+diff --git a/sbin/halt/halt.o b/sbin/halt/halt.o
+new file mode 100644
+index 0000000..29ae698
+Binary files /dev/null and b/sbin/halt/halt.o differ
+diff --git a/sbin/mksfs/depend.mk b/sbin/mksfs/depend.mk
+index 5a3827c..5b85e4a 100644
+--- a/sbin/mksfs/depend.mk
++++ b/sbin/mksfs/depend.mk
+@@ -34,3 +34,4 @@ disk.o: \
+  disk.h
+ support.o: \
+  support.c
++
+diff --git a/sbin/mksfs/dependh.mk b/sbin/mksfs/dependh.mk
+index 400e712..0900d3c 100644
+--- a/sbin/mksfs/dependh.mk
++++ b/sbin/mksfs/dependh.mk
+@@ -11,3 +11,4 @@ disk.ho: \
+  disk.h
+ support.ho: \
+  support.c
++
+diff --git a/sbin/mksfs/disk.ho b/sbin/mksfs/disk.ho
+new file mode 100644
+index 0000000..d139b60
+Binary files /dev/null and b/sbin/mksfs/disk.ho differ
+diff --git a/sbin/mksfs/disk.o b/sbin/mksfs/disk.o
+new file mode 100644
+index 0000000..eafd17a
+Binary files /dev/null and b/sbin/mksfs/disk.o differ
+diff --git a/sbin/mksfs/host-mksfs b/sbin/mksfs/host-mksfs
+new file mode 100755
+index 0000000..8e3af74
+Binary files /dev/null and b/sbin/mksfs/host-mksfs differ
+diff --git a/sbin/mksfs/mksfs b/sbin/mksfs/mksfs
+new file mode 100755
+index 0000000..7527bd3
+Binary files /dev/null and b/sbin/mksfs/mksfs differ
+diff --git a/sbin/mksfs/mksfs.ho b/sbin/mksfs/mksfs.ho
+new file mode 100644
+index 0000000..fa22ecf
+Binary files /dev/null and b/sbin/mksfs/mksfs.ho differ
+diff --git a/sbin/mksfs/mksfs.o b/sbin/mksfs/mksfs.o
+new file mode 100644
+index 0000000..68eda33
+Binary files /dev/null and b/sbin/mksfs/mksfs.o differ
+diff --git a/sbin/mksfs/support.ho b/sbin/mksfs/support.ho
+new file mode 100644
+index 0000000..d3ad111
+Binary files /dev/null and b/sbin/mksfs/support.ho differ
+diff --git a/sbin/mksfs/support.o b/sbin/mksfs/support.o
+new file mode 100644
+index 0000000..2e02b08
+Binary files /dev/null and b/sbin/mksfs/support.o differ
+diff --git a/sbin/poweroff/depend.mk b/sbin/poweroff/depend.mk
+index 566e6fb..0c9eeef 100644
+--- a/sbin/poweroff/depend.mk
++++ b/sbin/poweroff/depend.mk
+@@ -7,3 +7,4 @@ poweroff.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h
++
+diff --git a/sbin/poweroff/poweroff b/sbin/poweroff/poweroff
+new file mode 100755
+index 0000000..3c2e323
+Binary files /dev/null and b/sbin/poweroff/poweroff differ
+diff --git a/sbin/poweroff/poweroff.o b/sbin/poweroff/poweroff.o
+new file mode 100644
+index 0000000..c917051
+Binary files /dev/null and b/sbin/poweroff/poweroff.o differ
+diff --git a/sbin/reboot/depend.mk b/sbin/reboot/depend.mk
+index bdbe5b1..165bc61 100644
+--- a/sbin/reboot/depend.mk
++++ b/sbin/reboot/depend.mk
+@@ -7,3 +7,4 @@ reboot.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h
++
+diff --git a/sbin/reboot/reboot b/sbin/reboot/reboot
+new file mode 100755
+index 0000000..ab20d92
+Binary files /dev/null and b/sbin/reboot/reboot differ
+diff --git a/sbin/reboot/reboot.o b/sbin/reboot/reboot.o
+new file mode 100644
+index 0000000..42d00f9
+Binary files /dev/null and b/sbin/reboot/reboot.o differ
+diff --git a/testbin/add/add b/testbin/add/add
+new file mode 100755
+index 0000000..cd82d3e
+Binary files /dev/null and b/testbin/add/add differ
+diff --git a/testbin/add/add.o b/testbin/add/add.o
+new file mode 100644
+index 0000000..72103f1
+Binary files /dev/null and b/testbin/add/add.o differ
+diff --git a/testbin/add/depend.mk b/testbin/add/depend.mk
+index 0de8861..56be6ee 100644
+--- a/testbin/add/depend.mk
++++ b/testbin/add/depend.mk
+@@ -8,3 +8,4 @@ add.o: \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/stdlib.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/argtest/argtest b/testbin/argtest/argtest
+new file mode 100755
+index 0000000..427b61a
+Binary files /dev/null and b/testbin/argtest/argtest differ
+diff --git a/testbin/argtest/argtest.o b/testbin/argtest/argtest.o
+new file mode 100644
+index 0000000..1b39499
+Binary files /dev/null and b/testbin/argtest/argtest.o differ
+diff --git a/testbin/argtest/depend.mk b/testbin/argtest/depend.mk
+index ec3a3f4..f23a14b 100644
+--- a/testbin/argtest/depend.mk
++++ b/testbin/argtest/depend.mk
+@@ -6,3 +6,4 @@ argtest.o: \
+  $(OSTREE)/include/machine/types.h \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/badcall/bad_chdir.o b/testbin/badcall/bad_chdir.o
+new file mode 100644
+index 0000000..1c75c1d
+Binary files /dev/null and b/testbin/badcall/bad_chdir.o differ
+diff --git a/testbin/badcall/bad_close.o b/testbin/badcall/bad_close.o
+new file mode 100644
+index 0000000..17884ba
+Binary files /dev/null and b/testbin/badcall/bad_close.o differ
+diff --git a/testbin/badcall/bad_dup2.o b/testbin/badcall/bad_dup2.o
+new file mode 100644
+index 0000000..3f6a86c
+Binary files /dev/null and b/testbin/badcall/bad_dup2.o differ
+diff --git a/testbin/badcall/bad_execv.o b/testbin/badcall/bad_execv.o
+new file mode 100644
+index 0000000..47d6492
+Binary files /dev/null and b/testbin/badcall/bad_execv.o differ
+diff --git a/testbin/badcall/bad_fsync.o b/testbin/badcall/bad_fsync.o
+new file mode 100644
+index 0000000..1bf14fa
+Binary files /dev/null and b/testbin/badcall/bad_fsync.o differ
+diff --git a/testbin/badcall/bad_ftruncate.o b/testbin/badcall/bad_ftruncate.o
+new file mode 100644
+index 0000000..ac574e8
+Binary files /dev/null and b/testbin/badcall/bad_ftruncate.o differ
+diff --git a/testbin/badcall/bad_getcwd.o b/testbin/badcall/bad_getcwd.o
+new file mode 100644
+index 0000000..add4ffa
+Binary files /dev/null and b/testbin/badcall/bad_getcwd.o differ
+diff --git a/testbin/badcall/bad_getdirentry.o b/testbin/badcall/bad_getdirentry.o
+new file mode 100644
+index 0000000..3fcb479
+Binary files /dev/null and b/testbin/badcall/bad_getdirentry.o differ
+diff --git a/testbin/badcall/bad_ioctl.o b/testbin/badcall/bad_ioctl.o
+new file mode 100644
+index 0000000..da4fc19
+Binary files /dev/null and b/testbin/badcall/bad_ioctl.o differ
+diff --git a/testbin/badcall/bad_link.o b/testbin/badcall/bad_link.o
+new file mode 100644
+index 0000000..2932cb7
+Binary files /dev/null and b/testbin/badcall/bad_link.o differ
+diff --git a/testbin/badcall/bad_lseek.o b/testbin/badcall/bad_lseek.o
+new file mode 100644
+index 0000000..e670861
+Binary files /dev/null and b/testbin/badcall/bad_lseek.o differ
+diff --git a/testbin/badcall/bad_mkdir.o b/testbin/badcall/bad_mkdir.o
+new file mode 100644
+index 0000000..34d1e22
+Binary files /dev/null and b/testbin/badcall/bad_mkdir.o differ
+diff --git a/testbin/badcall/bad_open.o b/testbin/badcall/bad_open.o
+new file mode 100644
+index 0000000..c89f8a6
+Binary files /dev/null and b/testbin/badcall/bad_open.o differ
+diff --git a/testbin/badcall/bad_pipe.o b/testbin/badcall/bad_pipe.o
+new file mode 100644
+index 0000000..1afd9a7
+Binary files /dev/null and b/testbin/badcall/bad_pipe.o differ
+diff --git a/testbin/badcall/bad_read.o b/testbin/badcall/bad_read.o
+new file mode 100644
+index 0000000..57bbd9b
+Binary files /dev/null and b/testbin/badcall/bad_read.o differ
+diff --git a/testbin/badcall/bad_readlink.o b/testbin/badcall/bad_readlink.o
+new file mode 100644
+index 0000000..e3ee1b4
+Binary files /dev/null and b/testbin/badcall/bad_readlink.o differ
+diff --git a/testbin/badcall/bad_reboot.o b/testbin/badcall/bad_reboot.o
+new file mode 100644
+index 0000000..3e15e23
+Binary files /dev/null and b/testbin/badcall/bad_reboot.o differ
+diff --git a/testbin/badcall/bad_remove.o b/testbin/badcall/bad_remove.o
+new file mode 100644
+index 0000000..9388ca6
+Binary files /dev/null and b/testbin/badcall/bad_remove.o differ
+diff --git a/testbin/badcall/bad_rename.o b/testbin/badcall/bad_rename.o
+new file mode 100644
+index 0000000..06cc6b2
+Binary files /dev/null and b/testbin/badcall/bad_rename.o differ
+diff --git a/testbin/badcall/bad_rmdir.o b/testbin/badcall/bad_rmdir.o
+new file mode 100644
+index 0000000..3d6f640
+Binary files /dev/null and b/testbin/badcall/bad_rmdir.o differ
+diff --git a/testbin/badcall/bad_sbrk.o b/testbin/badcall/bad_sbrk.o
+new file mode 100644
+index 0000000..f4f5398
+Binary files /dev/null and b/testbin/badcall/bad_sbrk.o differ
+diff --git a/testbin/badcall/bad_stat.o b/testbin/badcall/bad_stat.o
+new file mode 100644
+index 0000000..c4b5a28
+Binary files /dev/null and b/testbin/badcall/bad_stat.o differ
+diff --git a/testbin/badcall/bad_symlink.o b/testbin/badcall/bad_symlink.o
+new file mode 100644
+index 0000000..c6c0ae6
+Binary files /dev/null and b/testbin/badcall/bad_symlink.o differ
+diff --git a/testbin/badcall/bad_time.o b/testbin/badcall/bad_time.o
+new file mode 100644
+index 0000000..bec7b74
+Binary files /dev/null and b/testbin/badcall/bad_time.o differ
+diff --git a/testbin/badcall/bad_waitpid.o b/testbin/badcall/bad_waitpid.o
+new file mode 100644
+index 0000000..e5bc059
+Binary files /dev/null and b/testbin/badcall/bad_waitpid.o differ
+diff --git a/testbin/badcall/bad_write.o b/testbin/badcall/bad_write.o
+new file mode 100644
+index 0000000..3a6f6cf
+Binary files /dev/null and b/testbin/badcall/bad_write.o differ
+diff --git a/testbin/badcall/badcall b/testbin/badcall/badcall
+new file mode 100755
+index 0000000..027909f
+Binary files /dev/null and b/testbin/badcall/badcall differ
+diff --git a/testbin/badcall/common_buf.o b/testbin/badcall/common_buf.o
+new file mode 100644
+index 0000000..020af0d
+Binary files /dev/null and b/testbin/badcall/common_buf.o differ
+diff --git a/testbin/badcall/common_fds.o b/testbin/badcall/common_fds.o
+new file mode 100644
+index 0000000..b30f831
+Binary files /dev/null and b/testbin/badcall/common_fds.o differ
+diff --git a/testbin/badcall/common_path.o b/testbin/badcall/common_path.o
+new file mode 100644
+index 0000000..004b61e
+Binary files /dev/null and b/testbin/badcall/common_path.o differ
+diff --git a/testbin/badcall/depend.mk b/testbin/badcall/depend.mk
+index 3a64c26..03c1204 100644
+--- a/testbin/badcall/depend.mk
++++ b/testbin/badcall/depend.mk
+@@ -431,3 +431,4 @@ driver.o: \
+  $(OSTREE)/include/err.h \
+  config.h \
+  test.h
++
+diff --git a/testbin/badcall/driver.o b/testbin/badcall/driver.o
+new file mode 100644
+index 0000000..3a3228f
+Binary files /dev/null and b/testbin/badcall/driver.o differ
+diff --git a/testbin/bigfile/bigfile b/testbin/bigfile/bigfile
+new file mode 100755
+index 0000000..db02eaa
+Binary files /dev/null and b/testbin/bigfile/bigfile differ
+diff --git a/testbin/bigfile/bigfile.o b/testbin/bigfile/bigfile.o
+new file mode 100644
+index 0000000..e54b9e6
+Binary files /dev/null and b/testbin/bigfile/bigfile.o differ
+diff --git a/testbin/bigfile/depend.mk b/testbin/bigfile/depend.mk
+index 7158550..c66c235 100644
+--- a/testbin/bigfile/depend.mk
++++ b/testbin/bigfile/depend.mk
+@@ -12,3 +12,4 @@ bigfile.o: \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/conman/conman b/testbin/conman/conman
+new file mode 100755
+index 0000000..1ab4866
+Binary files /dev/null and b/testbin/conman/conman differ
+diff --git a/testbin/conman/conman.o b/testbin/conman/conman.o
+new file mode 100644
+index 0000000..468b297
+Binary files /dev/null and b/testbin/conman/conman.o differ
+diff --git a/testbin/conman/depend.mk b/testbin/conman/depend.mk
+index 1f4394d..87716fa 100644
+--- a/testbin/conman/depend.mk
++++ b/testbin/conman/depend.mk
+@@ -9,3 +9,4 @@ conman.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/crash/crash b/testbin/crash/crash
+new file mode 100755
+index 0000000..731342b
+Binary files /dev/null and b/testbin/crash/crash differ
+diff --git a/testbin/crash/crash.o b/testbin/crash/crash.o
+new file mode 100644
+index 0000000..51550a9
+Binary files /dev/null and b/testbin/crash/crash.o differ
+diff --git a/testbin/crash/depend.mk b/testbin/crash/depend.mk
+index 6ac8823..444def3 100644
+--- a/testbin/crash/depend.mk
++++ b/testbin/crash/depend.mk
+@@ -10,3 +10,4 @@ crash.o: \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/ctest/ctest b/testbin/ctest/ctest
+new file mode 100755
+index 0000000..cd26689
+Binary files /dev/null and b/testbin/ctest/ctest differ
+diff --git a/testbin/ctest/ctest.o b/testbin/ctest/ctest.o
+new file mode 100644
+index 0000000..b8b0b7e
+Binary files /dev/null and b/testbin/ctest/ctest.o differ
+diff --git a/testbin/ctest/depend.mk b/testbin/ctest/depend.mk
+index e2a65ad..e3529ba 100644
+--- a/testbin/ctest/depend.mk
++++ b/testbin/ctest/depend.mk
+@@ -7,3 +7,4 @@ ctest.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/stdlib.h
++
+diff --git a/testbin/dirconc/depend.mk b/testbin/dirconc/depend.mk
+index e8767da..942660f 100644
+--- a/testbin/dirconc/depend.mk
++++ b/testbin/dirconc/depend.mk
+@@ -16,3 +16,4 @@ dirconc.o: \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/stdlib.h \
+  $(OSTREE)/include/string.h
++
+diff --git a/testbin/dirconc/dirconc b/testbin/dirconc/dirconc
+new file mode 100755
+index 0000000..14e1b4f
+Binary files /dev/null and b/testbin/dirconc/dirconc differ
+diff --git a/testbin/dirconc/dirconc.o b/testbin/dirconc/dirconc.o
+new file mode 100644
+index 0000000..2123e2d
+Binary files /dev/null and b/testbin/dirconc/dirconc.o differ
+diff --git a/testbin/dirseek/depend.mk b/testbin/dirseek/depend.mk
+index f2bf933..9db5ff7 100644
+--- a/testbin/dirseek/depend.mk
++++ b/testbin/dirseek/depend.mk
+@@ -14,3 +14,4 @@ dirseek.o: \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/stdlib.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/dirseek/dirseek b/testbin/dirseek/dirseek
+new file mode 100755
+index 0000000..35c500d
+Binary files /dev/null and b/testbin/dirseek/dirseek differ
+diff --git a/testbin/dirseek/dirseek.o b/testbin/dirseek/dirseek.o
+new file mode 100644
+index 0000000..41e5ab6
+Binary files /dev/null and b/testbin/dirseek/dirseek.o differ
+diff --git a/testbin/dirtest/depend.mk b/testbin/dirtest/depend.mk
+index 345fa42..e9bcc32 100644
+--- a/testbin/dirtest/depend.mk
++++ b/testbin/dirtest/depend.mk
+@@ -13,3 +13,4 @@ dirtest.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/string.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/dirtest/dirtest b/testbin/dirtest/dirtest
+new file mode 100755
+index 0000000..2470674
+Binary files /dev/null and b/testbin/dirtest/dirtest differ
+diff --git a/testbin/dirtest/dirtest.o b/testbin/dirtest/dirtest.o
+new file mode 100644
+index 0000000..2dd5a01
+Binary files /dev/null and b/testbin/dirtest/dirtest.o differ
+diff --git a/testbin/f_test/depend.mk b/testbin/f_test/depend.mk
+index c8f7278..51dc892 100644
+--- a/testbin/f_test/depend.mk
++++ b/testbin/f_test/depend.mk
+@@ -38,3 +38,4 @@ f_write.o: \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/err.h \
+  f_hdr.h
++
+diff --git a/testbin/f_test/f_read.o b/testbin/f_test/f_read.o
+new file mode 100644
+index 0000000..fdb6d0b
+Binary files /dev/null and b/testbin/f_test/f_read.o differ
+diff --git a/testbin/f_test/f_test b/testbin/f_test/f_test
+new file mode 100755
+index 0000000..b162e5b
+Binary files /dev/null and b/testbin/f_test/f_test differ
+diff --git a/testbin/f_test/f_test.o b/testbin/f_test/f_test.o
+new file mode 100644
+index 0000000..39bee24
+Binary files /dev/null and b/testbin/f_test/f_test.o differ
+diff --git a/testbin/f_test/f_write.o b/testbin/f_test/f_write.o
+new file mode 100644
+index 0000000..1cf4d6f
+Binary files /dev/null and b/testbin/f_test/f_write.o differ
+diff --git a/testbin/farm/depend.mk b/testbin/farm/depend.mk
+index 1852367..0a07787 100644
+--- a/testbin/farm/depend.mk
++++ b/testbin/farm/depend.mk
+@@ -9,3 +9,4 @@ farm.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/farm/farm b/testbin/farm/farm
+new file mode 100755
+index 0000000..50dcc43
+Binary files /dev/null and b/testbin/farm/farm differ
+diff --git a/testbin/farm/farm.o b/testbin/farm/farm.o
+new file mode 100644
+index 0000000..d182026
+Binary files /dev/null and b/testbin/farm/farm.o differ
+diff --git a/testbin/faulter/depend.mk b/testbin/faulter/depend.mk
+index 83d5abb..b74d4bc 100644
+--- a/testbin/faulter/depend.mk
++++ b/testbin/faulter/depend.mk
+@@ -6,3 +6,4 @@ faulter.o: \
+  $(OSTREE)/include/machine/types.h \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/faulter/faulter b/testbin/faulter/faulter
+new file mode 100755
+index 0000000..acaa2d0
+Binary files /dev/null and b/testbin/faulter/faulter differ
+diff --git a/testbin/faulter/faulter.o b/testbin/faulter/faulter.o
+new file mode 100644
+index 0000000..9d2fd2c
+Binary files /dev/null and b/testbin/faulter/faulter.o differ
+diff --git a/testbin/filetest/depend.mk b/testbin/filetest/depend.mk
+index 55c745c..56dcf92 100644
+--- a/testbin/filetest/depend.mk
++++ b/testbin/filetest/depend.mk
+@@ -11,3 +11,4 @@ filetest.o: \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/filetest/filetest b/testbin/filetest/filetest
+new file mode 100755
+index 0000000..94d152b
+Binary files /dev/null and b/testbin/filetest/filetest differ
+diff --git a/testbin/filetest/filetest.o b/testbin/filetest/filetest.o
+new file mode 100644
+index 0000000..1600609
+Binary files /dev/null and b/testbin/filetest/filetest.o differ
+diff --git a/testbin/forkbomb/depend.mk b/testbin/forkbomb/depend.mk
+index dbe3742..572d01a 100644
+--- a/testbin/forkbomb/depend.mk
++++ b/testbin/forkbomb/depend.mk
+@@ -9,3 +9,4 @@ forkbomb.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/forkbomb/forkbomb b/testbin/forkbomb/forkbomb
+new file mode 100755
+index 0000000..9351485
+Binary files /dev/null and b/testbin/forkbomb/forkbomb differ
+diff --git a/testbin/forkbomb/forkbomb.o b/testbin/forkbomb/forkbomb.o
+new file mode 100644
+index 0000000..a53ba2f
+Binary files /dev/null and b/testbin/forkbomb/forkbomb.o differ
+diff --git a/testbin/forktest/depend.mk b/testbin/forktest/depend.mk
+index c41f367..5ba124e 100644
+--- a/testbin/forktest/depend.mk
++++ b/testbin/forktest/depend.mk
+@@ -12,3 +12,4 @@ forktest.o: \
+  $(OSTREE)/include/stdio.h \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/forktest/forktest b/testbin/forktest/forktest
+new file mode 100755
+index 0000000..36a7713
+Binary files /dev/null and b/testbin/forktest/forktest differ
+diff --git a/testbin/forktest/forktest.o b/testbin/forktest/forktest.o
+new file mode 100644
+index 0000000..8e8204e
+Binary files /dev/null and b/testbin/forktest/forktest.o differ
+diff --git a/testbin/guzzle/depend.mk b/testbin/guzzle/depend.mk
+index 37c69c9..ce9c289 100644
+--- a/testbin/guzzle/depend.mk
++++ b/testbin/guzzle/depend.mk
+@@ -9,3 +9,4 @@ guzzle.o: \
+  $(OSTREE)/include/unistd.h \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h
++
+diff --git a/testbin/guzzle/guzzle b/testbin/guzzle/guzzle
+new file mode 100755
+index 0000000..da3a263
+Binary files /dev/null and b/testbin/guzzle/guzzle differ
+diff --git a/testbin/guzzle/guzzle.o b/testbin/guzzle/guzzle.o
+new file mode 100644
+index 0000000..454753a
+Binary files /dev/null and b/testbin/guzzle/guzzle.o differ
+diff --git a/testbin/hash/depend.mk b/testbin/hash/depend.mk
+index 227e234..b4e4d72 100644
+--- a/testbin/hash/depend.mk
++++ b/testbin/hash/depend.mk
+@@ -11,3 +11,4 @@ hash.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/fcntl.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/hash/dependh.mk b/testbin/hash/dependh.mk
+index d495ef2..aadaf5b 100644
+--- a/testbin/hash/dependh.mk
++++ b/testbin/hash/dependh.mk
+@@ -2,3 +2,4 @@
+ hash.ho: \
+  hash.c \
+  $(OSTREE)/hostinclude/hostcompat.h
++
+diff --git a/testbin/hash/hash b/testbin/hash/hash
+new file mode 100755
+index 0000000..f929e71
+Binary files /dev/null and b/testbin/hash/hash differ
+diff --git a/testbin/hash/hash.ho b/testbin/hash/hash.ho
+new file mode 100644
+index 0000000..e563d96
+Binary files /dev/null and b/testbin/hash/hash.ho differ
+diff --git a/testbin/hash/hash.o b/testbin/hash/hash.o
+new file mode 100644
+index 0000000..6cdad3b
+Binary files /dev/null and b/testbin/hash/hash.o differ
+diff --git a/testbin/hash/host-hash b/testbin/hash/host-hash
+new file mode 100755
+index 0000000..dc69f6a
+Binary files /dev/null and b/testbin/hash/host-hash differ
+diff --git a/testbin/hog/depend.mk b/testbin/hog/depend.mk
+index fb65ead..7d097df 100644
+--- a/testbin/hog/depend.mk
++++ b/testbin/hog/depend.mk
+@@ -1,3 +1,4 @@
+ 
+ hog.o: \
+  hog.c
++
+diff --git a/testbin/hog/hog b/testbin/hog/hog
+new file mode 100755
+index 0000000..8d85a14
+Binary files /dev/null and b/testbin/hog/hog differ
+diff --git a/testbin/hog/hog.o b/testbin/hog/hog.o
+new file mode 100644
+index 0000000..baaa6b0
+Binary files /dev/null and b/testbin/hog/hog.o differ
+diff --git a/testbin/huge/depend.mk b/testbin/huge/depend.mk
+index e67cda0..c031b06 100644
+--- a/testbin/huge/depend.mk
++++ b/testbin/huge/depend.mk
+@@ -7,3 +7,4 @@ huge.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/stdlib.h
++
+diff --git a/testbin/huge/huge b/testbin/huge/huge
+new file mode 100755
+index 0000000..76820df
+Binary files /dev/null and b/testbin/huge/huge differ
+diff --git a/testbin/huge/huge.o b/testbin/huge/huge.o
+new file mode 100644
+index 0000000..a4d8ef2
+Binary files /dev/null and b/testbin/huge/huge.o differ
+diff --git a/testbin/kitchen/depend.mk b/testbin/kitchen/depend.mk
+index e0108c4..b0f4dbb 100644
+--- a/testbin/kitchen/depend.mk
++++ b/testbin/kitchen/depend.mk
+@@ -9,3 +9,4 @@ kitchen.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/kitchen/kitchen b/testbin/kitchen/kitchen
+new file mode 100755
+index 0000000..384d23a
+Binary files /dev/null and b/testbin/kitchen/kitchen differ
+diff --git a/testbin/kitchen/kitchen.o b/testbin/kitchen/kitchen.o
+new file mode 100644
+index 0000000..af64b6c
+Binary files /dev/null and b/testbin/kitchen/kitchen.o differ
+diff --git a/testbin/matmult/depend.mk b/testbin/matmult/depend.mk
+index 745d5a0..ad0560b 100644
+--- a/testbin/matmult/depend.mk
++++ b/testbin/matmult/depend.mk
+@@ -9,3 +9,4 @@ matmult.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/stdio.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/matmult/matmult b/testbin/matmult/matmult
+new file mode 100755
+index 0000000..e3c1498
+Binary files /dev/null and b/testbin/matmult/matmult differ
+diff --git a/testbin/matmult/matmult.o b/testbin/matmult/matmult.o
+new file mode 100644
+index 0000000..c12c477
+Binary files /dev/null and b/testbin/matmult/matmult.o differ
+diff --git a/testbin/palin/depend.mk b/testbin/palin/depend.mk
+index 3145f2e..7f6e291 100644
+--- a/testbin/palin/depend.mk
++++ b/testbin/palin/depend.mk
+@@ -7,3 +7,4 @@ palin.o: \
+  $(OSTREE)/include/kern/types.h \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/string.h
++
+diff --git a/testbin/palin/palin b/testbin/palin/palin
+new file mode 100755
+index 0000000..2a9fe08
+Binary files /dev/null and b/testbin/palin/palin differ
+diff --git a/testbin/palin/palin.o b/testbin/palin/palin.o
+new file mode 100644
+index 0000000..c16bf85
+Binary files /dev/null and b/testbin/palin/palin.o differ
+diff --git a/testbin/parallelvm/depend.mk b/testbin/parallelvm/depend.mk
+index 00862ec..d389cb5 100644
+--- a/testbin/parallelvm/depend.mk
++++ b/testbin/parallelvm/depend.mk
+@@ -13,3 +13,4 @@ parallelvm.o: \
+  $(OSTREE)/include/string.h \
+  $(OSTREE)/include/stdlib.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/parallelvm/parallelvm b/testbin/parallelvm/parallelvm
+new file mode 100755
+index 0000000..b7bb98c
+Binary files /dev/null and b/testbin/parallelvm/parallelvm differ
+diff --git a/testbin/parallelvm/parallelvm.o b/testbin/parallelvm/parallelvm.o
+new file mode 100644
+index 0000000..b012682
+Binary files /dev/null and b/testbin/parallelvm/parallelvm.o differ
+diff --git a/testbin/randcall/calls.c b/testbin/randcall/calls.c
+new file mode 100644
+index 0000000..d7b8ad9
+--- /dev/null
++++ b/testbin/randcall/calls.c
+@@ -0,0 +1,873 @@
++/* Automatically generated file; do not edit */
++#include <sys/types.h>
++#include <sys/stat.h>
++#include <assert.h>
++#include <unistd.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <errno.h>
++#include <err.h>
++
++#include "extern.h"
++
++typedef void (*tryfunc)(int dofork);
++
++static
++void
++try_execv(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "execv(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = execv(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_waitpid(int dofork)
++{
++	int a0 = randint();
++	void * a1 = randptr();
++	int a2 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "waitpid(%d, %p, %d)",
++		(a0), (a1), (a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = waitpid(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_open(int dofork)
++{
++	void * a0 = randptr();
++	int a1 = randint();
++	int a2 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "open(%p, %d, %d)",
++		(a0), (a1), (a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = open(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_read(int dofork)
++{
++	int a0 = randint();
++	void * a1 = randptr();
++	size_t a2 = randsize();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "read(%d, %p, %lu)",
++		(a0), (a1), (unsigned long)(a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = read(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_write(int dofork)
++{
++	int a0 = randint();
++	void * a1 = randptr();
++	size_t a2 = randsize();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "write(%d, %p, %lu)",
++		(a0), (a1), (unsigned long)(a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = write(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_close(int dofork)
++{
++	int a0 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "close(%d)",
++		(a0));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = close(a0);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_ioctl(int dofork)
++{
++	int a0 = randint();
++	int a1 = randint();
++	void * a2 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "ioctl(%d, %d, %p)",
++		(a0), (a1), (a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = ioctl(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_lseek(int dofork)
++{
++	int a0 = randint();
++	off_t a1 = randoff();
++	int a2 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "lseek(%d, %ld, %d)",
++		(a0), (long)(a1), (a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = lseek(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_fsync(int dofork)
++{
++	int a0 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "fsync(%d)",
++		(a0));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = fsync(a0);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_ftruncate(int dofork)
++{
++	int a0 = randint();
++	off_t a1 = randoff();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "ftruncate(%d, %ld)",
++		(a0), (long)(a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = ftruncate(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_fstat(int dofork)
++{
++	int a0 = randint();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "fstat(%d, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = fstat(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_remove(int dofork)
++{
++	void * a0 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "remove(%p)",
++		(a0));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = remove(a0);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_rename(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "rename(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = rename(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_link(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "link(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = link(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_mkdir(int dofork)
++{
++	void * a0 = randptr();
++	int a1 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "mkdir(%p, %d)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = mkdir(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_rmdir(int dofork)
++{
++	void * a0 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "rmdir(%p)",
++		(a0));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = rmdir(a0);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_chdir(int dofork)
++{
++	void * a0 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "chdir(%p)",
++		(a0));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = chdir(a0);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_getdirentry(int dofork)
++{
++	int a0 = randint();
++	void * a1 = randptr();
++	size_t a2 = randsize();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "getdirentry(%d, %p, %lu)",
++		(a0), (a1), (unsigned long)(a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = getdirentry(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_symlink(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "symlink(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = symlink(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_readlink(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	size_t a2 = randsize();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "readlink(%p, %p, %lu)",
++		(a0), (a1), (unsigned long)(a2));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = readlink(a0, a1, a2);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_dup2(int dofork)
++{
++	int a0 = randint();
++	int a1 = randint();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "dup2(%d, %d)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = dup2(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_pipe(int dofork)
++{
++	void * a0 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "pipe(%p)",
++		(a0));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = pipe(a0);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try___time(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "__time(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = __time(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try___getcwd(int dofork)
++{
++	void * a0 = randptr();
++	size_t a1 = randsize();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "__getcwd(%p, %lu)",
++		(a0), (unsigned long)(a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = __getcwd(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_stat(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "stat(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = stat(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static
++void
++try_lstat(int dofork)
++{
++	void * a0 = randptr();
++	void * a1 = randptr();
++	int result, pid, status;
++	char buf[128];
++
++	snprintf(buf, sizeof(buf), "lstat(%p, %p)",
++		(a0), (a1));
++	printf("%-47s", buf);
++
++	pid = dofork ? fork() : 0;
++	if (pid<0) {
++		err(1, "fork");
++	}
++	if (pid>0) {
++		waitpid(pid, &status, 0);
++		return;
++	}
++
++	result = lstat(a0, a1);
++	printf(" result %d, errno %d\n", result, errno);
++	if (dofork) {
++		exit(0);
++	}
++}
++
++static tryfunc funcs2[] = {
++	try_execv,
++	try_waitpid,
++	try_open,
++	try_read,
++	try_write,
++	try_close,
++	try_lseek,
++	try_chdir,
++	try_dup2,
++	try___getcwd,
++	NULL
++};
++
++static tryfunc funcs3[] = {
++	try_execv,
++	try_waitpid,
++	try_open,
++	try_read,
++	try_write,
++	try_close,
++	try_lseek,
++	try_chdir,
++	try_dup2,
++	try___getcwd,
++	NULL
++};
++
++static tryfunc funcs4[] = {
++	try_execv,
++	try_waitpid,
++	try_open,
++	try_read,
++	try_write,
++	try_close,
++	try_lseek,
++	try_fsync,
++	try_ftruncate,
++	try_fstat,
++	try_remove,
++	try_rename,
++	try_mkdir,
++	try_rmdir,
++	try_chdir,
++	try_getdirentry,
++	try_dup2,
++	try___getcwd,
++	NULL
++};
++
++static tryfunc funcs5[] = {
++	try_execv,
++	try_waitpid,
++	try_open,
++	try_read,
++	try_write,
++	try_close,
++	try_ioctl,
++	try_lseek,
++	try_fsync,
++	try_ftruncate,
++	try_fstat,
++	try_remove,
++	try_rename,
++	try_link,
++	try_mkdir,
++	try_rmdir,
++	try_chdir,
++	try_getdirentry,
++	try_symlink,
++	try_readlink,
++	try_dup2,
++	try_pipe,
++	try___time,
++	try___getcwd,
++	try_stat,
++	try_lstat,
++	NULL
++};
++
++static tryfunc *tables[4] = {
++	funcs2,
++	funcs3,
++	funcs4,
++	funcs5,
++};
++
++void
++trycalls(int asst, int dofork, int count)
++{
++	tryfunc *list;
++	int i, j;
++
++	assert(asst>=2 && asst<=5);
++	list = tables[asst-2];
++
++	for (i=0; i<count; i++) {
++		for (j=0; list[j]; j++) {
++			(*list[j])(dofork);
++		}
++	}
++}
++
+diff --git a/testbin/randcall/calls.o b/testbin/randcall/calls.o
+new file mode 100644
+index 0000000..629310d
+Binary files /dev/null and b/testbin/randcall/calls.o differ
+diff --git a/testbin/randcall/depend.mk b/testbin/randcall/depend.mk
+index 1f2d367..7530013 100644
+--- a/testbin/randcall/depend.mk
++++ b/testbin/randcall/depend.mk
+@@ -27,3 +27,4 @@ main.o: \
+  $(OSTREE)/include/stdarg.h \
+  $(OSTREE)/include/string.h \
+  extern.h
++
+diff --git a/testbin/randcall/main.o b/testbin/randcall/main.o
+new file mode 100644
+index 0000000..e389612
+Binary files /dev/null and b/testbin/randcall/main.o differ
+diff --git a/testbin/randcall/randcall b/testbin/randcall/randcall
+new file mode 100755
+index 0000000..9de288d
+Binary files /dev/null and b/testbin/randcall/randcall differ
+diff --git a/testbin/rmdirtest/depend.mk b/testbin/rmdirtest/depend.mk
+index 36d4f39..1af4c14 100644
+--- a/testbin/rmdirtest/depend.mk
++++ b/testbin/rmdirtest/depend.mk
+@@ -18,3 +18,4 @@ rmdirtest.o: \
+  $(OSTREE)/include/limits.h \
+  $(OSTREE)/include/kern/limits.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/rmdirtest/rmdirtest b/testbin/rmdirtest/rmdirtest
+new file mode 100755
+index 0000000..4bcd48e
+Binary files /dev/null and b/testbin/rmdirtest/rmdirtest differ
+diff --git a/testbin/rmdirtest/rmdirtest.o b/testbin/rmdirtest/rmdirtest.o
+new file mode 100644
+index 0000000..ff80b21
+Binary files /dev/null and b/testbin/rmdirtest/rmdirtest.o differ
+diff --git a/testbin/rmtest/depend.mk b/testbin/rmtest/depend.mk
+index 449be7e..ebd9f2c 100644
+--- a/testbin/rmtest/depend.mk
++++ b/testbin/rmtest/depend.mk
+@@ -14,3 +14,4 @@ rmtest.o: \
+  $(OSTREE)/include/errno.h \
+  $(OSTREE)/include/kern/errno.h \
+  $(OSTREE)/include/err.h
++
+diff --git a/testbin/rmtest/rmtest b/testbin/rmtest/rmtest
+new file mode 100755
+index 0000000..e8fdb9d
+Binary files /dev/null and b/testbin/rmtest/rmtest differ
+diff --git a/testbin/rmtest/rmtest.o b/testbin/rmtest/rmtest.o
+new file mode 100644
+index 0000000..848dcf0
+Binary files /dev/null and b/testbin/rmtest/rmtest.o differ
+diff --git a/testbin/sink/depend.mk b/testbin/sink/depend.mk
+index b88468f..bfbfc2f 100644
+--- a/testbin/sink/depend.mk
++++ b/testbin/sink/depend.mk
+@@ -9,3 +9,4 @@ sink.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/sink/sink b/testbin/sink/sink
+new file mode 100755
+index 0000000..dd57c68
+Binary files /dev/null and b/testbin/sink/sink differ
+diff --git a/testbin/sink/sink.o b/testbin/sink/sink.o
+new file mode 100644
+index 0000000..5c262dd
+Binary files /dev/null and b/testbin/sink/sink.o differ
+diff --git a/testbin/sort/depend.mk b/testbin/sort/depend.mk
+index 9ee1d08..723a324 100644
+--- a/testbin/sort/depend.mk
++++ b/testbin/sort/depend.mk
+@@ -8,3 +8,4 @@ sort.o: \
+  $(OSTREE)/include/string.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/sort/sort b/testbin/sort/sort
+new file mode 100755
+index 0000000..dfd9675
+Binary files /dev/null and b/testbin/sort/sort differ
+diff --git a/testbin/sort/sort.o b/testbin/sort/sort.o
+new file mode 100644
+index 0000000..4140baa
+Binary files /dev/null and b/testbin/sort/sort.o differ
+diff --git a/testbin/sty/depend.mk b/testbin/sty/depend.mk
+index f041ddc..7759e5a 100644
+--- a/testbin/sty/depend.mk
++++ b/testbin/sty/depend.mk
+@@ -9,3 +9,4 @@ sty.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/sty/sty b/testbin/sty/sty
+new file mode 100755
+index 0000000..b8a66bf
+Binary files /dev/null and b/testbin/sty/sty differ
+diff --git a/testbin/sty/sty.o b/testbin/sty/sty.o
+new file mode 100644
+index 0000000..b1b2250
+Binary files /dev/null and b/testbin/sty/sty.o differ
+diff --git a/testbin/tail/depend.mk b/testbin/tail/depend.mk
+index 909395b..ae4c592 100644
+--- a/testbin/tail/depend.mk
++++ b/testbin/tail/depend.mk
+@@ -10,3 +10,4 @@ tail.o: \
+  $(OSTREE)/include/stdlib.h \
+  $(OSTREE)/include/err.h \
+  $(OSTREE)/include/stdarg.h
++
+diff --git a/testbin/tail/tail b/testbin/tail/tail
+new file mode 100755
+index 0000000..eacc7e8
+Binary files /dev/null and b/testbin/tail/tail differ
+diff --git a/testbin/tail/tail.o b/testbin/tail/tail.o
+new file mode 100644
+index 0000000..c698447
+Binary files /dev/null and b/testbin/tail/tail.o differ
+diff --git a/testbin/tictac/depend.mk b/testbin/tictac/depend.mk
+index 49fe0cc..7e89f94 100644
+--- a/testbin/tictac/depend.mk
++++ b/testbin/tictac/depend.mk
+@@ -9,3 +9,4 @@ tictac.o: \
+  $(OSTREE)/include/unistd.h \
+  $(OSTREE)/include/kern/unistd.h \
+  $(OSTREE)/include/kern/ioctl.h
++
+diff --git a/testbin/tictac/tictac b/testbin/tictac/tictac
+new file mode 100755
+index 0000000..f7a9c5f
+Binary files /dev/null and b/testbin/tictac/tictac differ
+diff --git a/testbin/tictac/tictac.o b/testbin/tictac/tictac.o
+new file mode 100644
+index 0000000..5798a2f
+Binary files /dev/null and b/testbin/tictac/tictac.o differ
+diff --git a/testbin/triplehuge/depend.mk b/testbin/triplehuge/depend.mk
+index 7878d48..e625ec5 100644
+--- a/testbin/triplehuge/depend.mk
++++ b/testbin/triplehuge/depend.mk
+@@ -14,3 +14,4 @@ triple.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  triple.h
++
+diff --git a/testbin/triplehuge/triple.o b/testbin/triplehuge/triple.o
+new file mode 100644
+index 0000000..d781420
+Binary files /dev/null and b/testbin/triplehuge/triple.o differ
+diff --git a/testbin/triplehuge/triplehuge b/testbin/triplehuge/triplehuge
+new file mode 100755
+index 0000000..fbec453
+Binary files /dev/null and b/testbin/triplehuge/triplehuge differ
+diff --git a/testbin/triplehuge/triplehuge.o b/testbin/triplehuge/triplehuge.o
+new file mode 100644
+index 0000000..3136bab
+Binary files /dev/null and b/testbin/triplehuge/triplehuge.o differ
+diff --git a/testbin/triplemat/depend.mk b/testbin/triplemat/depend.mk
+index 2b1a546..0929f5d 100644
+--- a/testbin/triplemat/depend.mk
++++ b/testbin/triplemat/depend.mk
+@@ -14,3 +14,4 @@ triple.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  triple.h
++
+diff --git a/testbin/triplemat/triple.c b/testbin/triplemat/triple.c
+new file mode 120000
+index 0000000..9d4e539
+--- /dev/null
++++ b/testbin/triplemat/triple.c
+@@ -0,0 +1 @@
++../triplehuge/triple.c
+\ No newline at end of file
+diff --git a/testbin/triplemat/triple.h b/testbin/triplemat/triple.h
+new file mode 120000
+index 0000000..130bb5b
+--- /dev/null
++++ b/testbin/triplemat/triple.h
+@@ -0,0 +1 @@
++../triplehuge/triple.h
+\ No newline at end of file
+diff --git a/testbin/triplemat/triple.o b/testbin/triplemat/triple.o
+new file mode 100644
+index 0000000..d781420
+Binary files /dev/null and b/testbin/triplemat/triple.o differ
+diff --git a/testbin/triplemat/triplemat b/testbin/triplemat/triplemat
+new file mode 100755
+index 0000000..52624bc
+Binary files /dev/null and b/testbin/triplemat/triplemat differ
+diff --git a/testbin/triplemat/triplemat.o b/testbin/triplemat/triplemat.o
+new file mode 100644
+index 0000000..d66017e
+Binary files /dev/null and b/testbin/triplemat/triplemat.o differ
+diff --git a/testbin/triplesort/depend.mk b/testbin/triplesort/depend.mk
+index c0f7cf0..21318c1 100644
+--- a/testbin/triplesort/depend.mk
++++ b/testbin/triplesort/depend.mk
+@@ -14,3 +14,4 @@ triple.o: \
+  $(OSTREE)/include/kern/ioctl.h \
+  $(OSTREE)/include/err.h \
+  triple.h
++
+diff --git a/testbin/triplesort/triple.c b/testbin/triplesort/triple.c
+new file mode 120000
+index 0000000..9d4e539
+--- /dev/null
++++ b/testbin/triplesort/triple.c
+@@ -0,0 +1 @@
++../triplehuge/triple.c
+\ No newline at end of file
+diff --git a/testbin/triplesort/triple.h b/testbin/triplesort/triple.h
+new file mode 120000
+index 0000000..130bb5b
+--- /dev/null
++++ b/testbin/triplesort/triple.h
+@@ -0,0 +1 @@
++../triplehuge/triple.h
+\ No newline at end of file
+diff --git a/testbin/triplesort/triple.o b/testbin/triplesort/triple.o
+new file mode 100644
+index 0000000..d781420
+Binary files /dev/null and b/testbin/triplesort/triple.o differ
+diff --git a/testbin/triplesort/triplesort b/testbin/triplesort/triplesort
+new file mode 100755
+index 0000000..f82c5fe
+Binary files /dev/null and b/testbin/triplesort/triplesort differ
+diff --git a/testbin/triplesort/triplesort.o b/testbin/triplesort/triplesort.o
+new file mode 100644
+index 0000000..34bcb61
+Binary files /dev/null and b/testbin/triplesort/triplesort.o differ
