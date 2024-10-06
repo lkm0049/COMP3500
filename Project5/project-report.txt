@@ -1,0 +1,259 @@
+
+/*
+ *COMP 3500: Project 5 Scheduling
+ *Liam Maher
+ *Version 1.0 06/21/2024
+ *
+ *NOTE: The following text file is my project report for Project 5.
+ *      Normally I would not have a comment block in a text file,
+ *	but it says every file we submit must have one.
+ *
+ *NOTICE OF AI USAGE: The author would like to acknowledge the use of ChatGPT, a language model
+ *      	 developed by OpenAI, in the preparation of this assignment. The ChatGPT
+ *      	 was used in the following way(s) in this assignment: brainstorming approaches
+ *     		 to certain function implementation problems (only within scheduler.c). Each part that used ChatGPT in the
+ *      	 brainstorming process is marked with a comment explaining why it was used, how it was used,
+ *      	 and what it helped me to understand further.
+ */
+(1) How did you separate scheduling mechanism from scheduling policies?
+	Answer: In order to seperate the scheduling mechanism from policies, I created a different function for each of the scheduling policies, outside of the main function within scheduler.c.
+(2) How did implement the three scheduling algorithms?
+	Answer: I implemented each of the 3 scheduling algorithms outside of the main function within scheduler.c.  
+		FCFS: this was a relatively easy function to implement, each of the tasks were added to the ready_queue based on arrival time, then based on the ready_queue ordering, I was able to just go in order and "run" each task until it was finished.
+		SRTF: this one was a little bit harder to implement than the FCFS function, each task was added to the queue based on arrival time, then the task with the shortest remaining time was chosen to run, being caluclated after each clock cycle.  This was continued until all tasks were finished.
+		RR:  This one was by far the hardest for me to implement.  I ended up spending hours trying to get it to work properly and then finally decided to add a print function to help me figure out what was going wrong (left in the scheduler.c file but the function calls were commented out).
+		     I started by adding the tasks to the queue based on arrival time, and based on the time quantum it would either run until it reached its limit or finished. This process repeats for the rest of the tasks, iterating through the ready queue and manipulating the task positions within
+	             the ready queue until all of the tasks were completed.
+(3) How did you calculate waiting times?
+	Answer: I used a seperate file, stats.c, to calculate all of the times needed,  in order to keep scheduler.c more concise and also to be able to see if I had errors in my calculations or implementation better.  In order to make the calculations, i kept track of the finished tasks and their data with finished_tasks[].
+		For waiting times, I used the formula discussed in class: wait time = turnaround time - cpu time but I didnt want to intertwine my waiting time and turnaround time functions so I simplified this to wait time = finish_time - arrival_time - burst_time for each task, then averaged it.
+		
+(4) How did you calculate response times?
+	Answer: I used a seperate file, stats.c, to calculate all of the times needed,  in order to keep scheduler.c more concise and also to be able to see if I had errors in my calculations or implementation better.  In order to make the calculations, i kept track of the finished tasks and their data with finished_
+tasks[].
+	For response times I used the formula from class which is respone_time = start_time - arrival_time for each task and then averaged it.
+               
+(5) How did you calculate turnaround times?
+	Answer: I used a seperate file, stats.c, to calculate all of the times needed,  in order to keep scheduler.c more concise and also to be able to see if I had errors in my calculations or implementation better.  In order to make the calculations, i kept track of the finished tasks and their data with finished_
+tasks[].
+	For turnaround time I used the formula from class which is turnaround_time = finish_time - arrival_time for each task and then averaged it.
+               
+(6) How did you implement the command-line parser?
+	Answer: I implemented the command line parser in the main function of scheduler.c.  I used the argc and char *argv[] given to us in the scheduler.c base code in order to check the command line inputs and if they matched the specified format for the scheduler.
+
+
+Generality and Error Checking
+(1) How general is your solution?
+	Answer: I'd say my solution is very general.  I could have added more error checking statements, but the project description said that the user had a pretty good idea of how to use the program and what it did so I tried to keep it as simple as possible.
+		I also tried to keep the policy implementations as simple as possible.  I could probably have added more helper functions to get rid of some more redundant code, but I honestly just didn't have enough time to do so and it also would have made the code less readable in my opinion.
+(2) How easy would it be to add a new scheduling policy into your scheduler?
+	Answer:  It would be relatively easy if you already had the implemntation code for the policy.  You would just have to make sure variable names match up and that you keep track of the data related to finished_tasks[] correctly.  Then you would just have to make sure that the 
+		 command line parser in the main method would be able to recognize it and any of the arguments that it has.  If it did not have 3 or 4 arguments like the ones we had to implement, you would need to add / remove some of the conditional error checking statements
+		 within the main method.
+(3) Does your program offer input error checking?
+	Answer:  Yes, my program checks the number of arguments passed, and if they are valid arguments that it recognizes.
+
+Miscellaneous factors
+(1) Is your code elegant or readable?
+	I'd like to think my code is pretty elegant and readable.  I added a lot of comments in pretty much every line I wrote in order to be able to debug easier, as well as understand what was going on in a certain point if I came back to look at it.
+	I made some helper functions in order to reduce the amount of redundant code, however, if I had more time I could probably add even more.  However, this might sacrifice the readability of some of the code.
+(2) How innovative is your solution? Did you try any ideas not suggested here?
+	I was not very innovative at all to be honest.  I mostly just looked at the descriptions of the policies on the handouts, powepoints, and lectures in order to derive my algorithms.  I did end up creating a different file for the stats, but that was just to keep scheduler.c less messy.
+	I ended up trying things that were not suggested, but in the end my final implementation was similar to that of everything we have discussed in class.
+(3) Did you document all outside sources?
+	Yes.  For the most part I just followed the lectures, powerpoints, and handouts regarding the policies and project 5.  However, I did utilize chatGPT for certain parts where I was stuck and needed help brainstorming how to fix/approach problems.
+	The AI use statement is provided both at the top of this file (wasnt really sure if it needed to be but I did just in case) and at the top of scheduler.c.  I left comments describing how I used it, why I used it, and what it helped me to do at each part that it was utilized for.
+	If any code snippets were derived from an approach that OpenAI's ChatGPT suggested, they are marked with a comment.  (ChatGPT was only utilized for implementation in the scheduler.c file, therefore, I only included the header statement here and in there).
+
+
+
+Sample input and output from my scheduler (for all of the following, task.list is the one provided through canvas):
+FIRST COME FIRST SERVE INPUT/OUTPUT EXAMPLE:
+./scheduler task.list FCFS
+Open file: task.list
+Scheduling Policy: FCFS
+There are 6 tasks loaded from "task.list". Press any key to continue ...
+==================================================================
+<time 0> process 1 is running
+<time 1> process 1 is running
+<time 2> process 1 is running
+<time 3> process 1 is running
+<time 4> process 1 is running
+<time 5> process 1 is running
+<time 6> process 1 is running
+<time 7> process 1 is running
+<time 8> process 1 is running
+<time 9> process 1 is running
+<time 10> process 1 is finished...
+<time 10> process 2 is running
+<time 11> process 2 is running
+<time 12> process 2 is running
+<time 13> process 2 is running
+<time 14> process 2 is running
+<time 15> process 2 is running
+<time 16> process 2 is running
+<time 17> process 2 is running
+<time 18> process 2 is running
+<time 19> process 2 is finished...
+<time 19> process 3 is running
+<time 20> process 3 is running
+<time 21> process 3 is running
+<time 22> process 3 is running
+<time 23> process 3 is running
+<time 24> process 3 is finished...
+<time 24> process 4 is running
+<time 25> process 4 is running
+<time 26> process 4 is running
+<time 27> process 4 is running
+<time 28> process 4 is finished...
+<time 28> process 5 is running
+<time 29> process 5 is running
+<time 30> process 5 is running
+<time 31> process 5 is running
+<time 32> process 5 is running
+<time 33> process 5 is running
+<time 34> process 5 is finished...
+<time 34> process 6 is running
+<time 35> process 6 is running
+<time 36> process 6 is running
+<time 37> process 6 is running
+<time 38> process 6 is running
+<time 39> process 6 is running
+<time 40> process 6 is running
+<time 41> process 6 is finished...
+<time 41> All processes finish ......
+============================================================
+Average waiting time:    14.17
+Average response time:   14.17
+Average turnaround time: 21.00
+Overall CPU usage:       100.00%
+============================================================
+SHORTEST REMAINING TIME FIRST INPUT/OUTPUT EXAMPLE:
+./scheduler task.list SRTF
+Open file: task.list
+Scheduling Policy: SRTF
+There are 6 tasks loaded from "task.list". Press any key to continue ...
+==================================================================
+<time 0> process 2 is running
+<time 1> process 2 is running
+<time 2> process 2 is running
+<time 3> process 3 is running
+<time 4> process 3 is running
+<time 5> process 3 is running
+<time 6> process 3 is running
+<time 7> process 3 is running
+<time 8> process 3 is finished...
+<time 8> process 4 is running
+<time 9> process 4 is running
+<time 10> process 4 is running
+<time 11> process 4 is running
+<time 12> process 4 is finished...
+<time 12> process 2 is running
+<time 13> process 2 is running
+<time 14> process 2 is running
+<time 15> process 2 is running
+<time 16> process 2 is running
+<time 17> process 2 is running
+<time 18> process 2 is finished...
+<time 18> process 5 is running
+<time 19> process 5 is running
+<time 20> process 5 is running
+<time 21> process 5 is running
+<time 22> process 5 is running
+<time 23> process 5 is running
+<time 24> process 5 is finished...
+<time 24> process 6 is running
+<time 25> process 6 is running
+<time 26> process 6 is running
+<time 27> process 6 is running
+<time 28> process 6 is running
+<time 29> process 6 is running
+<time 30> process 6 is running
+<time 31> process 6 is finished...
+<time 31> process 1 is running
+<time 32> process 1 is running
+<time 33> process 1 is running
+<time 34> process 1 is running
+<time 35> process 1 is running
+<time 36> process 1 is running
+<time 37> process 1 is running
+<time 38> process 1 is running
+<time 39> process 1 is running
+<time 40> process 1 is running
+<time 41> process 1 is finished...
+<time 41> All processes finish ......
+============================================================
+Average waiting time:    10.50
+Average response time:   9.00
+Average turnaround time: 17.33
+Overall CPU usage:       100.00%
+============================================================
+
+ROUND ROBIN INPUT/OUTPUT EXAMPLE:
+./scheduler task.list RR 4
+Time quantum is: 4
+Open file: task.list
+Scheduling Policy: RR
+There are 6 tasks loaded from "task.list". Press any key to continue ...
+==================================================================
+<time 0> process 1 is running
+<time 1> process 1 is running
+<time 2> process 1 is running
+<time 3> process 1 is running
+<time 4> process 2 is running
+<time 5> process 2 is running
+<time 6> process 2 is running
+<time 7> process 2 is running
+<time 8> process 3 is running
+<time 9> process 3 is running
+<time 10> process 3 is running
+<time 11> process 3 is running
+<time 12> process 1 is running
+<time 13> process 1 is running
+<time 14> process 1 is running
+<time 15> process 1 is running
+<time 16> process 4 is running
+<time 17> process 4 is running
+<time 18> process 4 is running
+<time 19> process 4 is running
+<time 20> process 4 is finished...
+<time 20> process 2 is running
+<time 21> process 2 is running
+<time 22> process 2 is running
+<time 23> process 2 is running
+<time 24> process 5 is running
+<time 25> process 5 is running
+<time 26> process 5 is running
+<time 27> process 5 is running
+<time 28> process 6 is running
+<time 29> process 6 is running
+<time 30> process 6 is running
+<time 31> process 6 is running
+<time 32> process 3 is running
+<time 33> process 3 is finished...
+<time 33> process 1 is running
+<time 34> process 1 is running
+<time 35> process 1 is finished...
+<time 35> process 2 is running
+<time 36> process 2 is finished...
+<time 36> process 5 is running
+<time 37> process 5 is running
+<time 38> process 5 is finished...
+<time 38> process 6 is running
+<time 39> process 6 is running
+<time 40> process 6 is running
+<time 41> process 6 is finished...
+<time 41> All processes finish ......
+============================================================
+Average waiting time:    22.00
+Average response time:   8.33
+Average turnaround time: 28.83
+Overall CPU usage:       100.00%
+============================================================
+
+Verification that MakeFile can manage project as per piazza:
+make
+Creating object files ...
+gcc -c read.c -o read.o
+Creating the scheduler ...
+gcc -o scheduler open.o read.o print.o stats.o scheduler.c -g
